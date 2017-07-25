@@ -1,1 +1,1 @@
-# rd53a_singlechip_flex
+# rd53a_quad_flex

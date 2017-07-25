@@ -1,4 +1,4 @@
-update=Mon 24 Jul 2017 09:15:00 PM PDT
+update=Mon 24 Jul 2017 10:44:44 PM PDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,5 +59,6 @@ LibName29=contrib
 LibName30=valves
 LibName31=rd53a
 LibName32=RD53A-cache
+LibName33=/home/katie/git/kicad/module
 [general]
 version=1

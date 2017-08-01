@@ -1,0 +1,8 @@
+(module RD53A (layer F.Cu) (tedit 597FC2F5)
+  (fp_text reference REF** (at 0 6.35) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value RD53A (at 0 5.08) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+)

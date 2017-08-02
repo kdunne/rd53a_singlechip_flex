@@ -30,6 +30,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:rd53a
 LIBS:RD53A-cache
+LIBS:module
 LIBS:RD53A_single-cache
 EELAYER 25 0
 EELAYER END
@@ -1001,7 +1002,7 @@ Wire Wire Line
 Text Label 19900 3100 2    60   ~ 0
 GND
 Text Label 6150 11425 1    60   ~ 0
-VDDD
+VDDA
 Wire Wire Line
 	6150 11425 6150 11025
 Connection ~ 6150 11025

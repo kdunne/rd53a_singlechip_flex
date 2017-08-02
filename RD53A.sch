@@ -125,8 +125,6 @@ NoConn ~ 18850 4300
 NoConn ~ 18850 4450
 NoConn ~ 18850 4600
 NoConn ~ 18850 4750
-NoConn ~ 18850 4900
-NoConn ~ 18850 5050
 $Comp
 L RD53A U4
 U 1 1 5968E7F2
@@ -502,8 +500,6 @@ Wire Wire Line
 	6600 10600 6600 11050
 Wire Wire Line
 	6450 10600 6450 11050
-Wire Wire Line
-	7350 10600 7350 11425
 Connection ~ 6900 11050
 Wire Wire Line
 	7200 10600 7200 11050
@@ -1009,8 +1005,6 @@ VDDD
 Wire Wire Line
 	6150 11425 6150 11025
 Connection ~ 6150 11025
-Text Label 7350 11425 1    60   ~ 0
-VDDA
 Text Label 1950 4800 0    60   ~ 0
 VDDD
 Wire Wire Line
@@ -1163,4 +1157,6 @@ F 3 "" H 9750 12325 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9750 10600 9750 12175
+Wire Wire Line
+	7350 11050 7350 10600
 $EndSCHEMATC

@@ -3,7 +3,7 @@
   (general
     (links 232)
     (no_connects 232)
-    (area 124.830085 89.366178 186.904762 139.84)
+    (area 124.830085 89.366178 187.212762 140.148)
     (thickness 1.6)
     (drawings 2)
     (tracks 0)
@@ -343,7 +343,7 @@
   )
 
   (module Resistors_SMD:R_0402_NoSilk (layer F.Cu) (tedit 58AAD992) (tstamp 5989E821)
-    (at 170.932381 127.925)
+    (at 149.3139 82.7024)
     (descr "Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0402")
     (path /598006A8)
@@ -377,7 +377,7 @@
   )
 
   (module Resistors_SMD:R_0402_NoSilk (layer F.Cu) (tedit 58AAD992) (tstamp 5989E812)
-    (at 174.232381 127.925)
+    (at 149.40746 81.13522)
     (descr "Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0402")
     (path /598006A2)
@@ -411,7 +411,7 @@
   )
 
   (module Resistors_SMD:R_0402_NoSilk (layer F.Cu) (tedit 58AAD992) (tstamp 5989E830)
-    (at 165.132381 133.375)
+    (at 149.38248 84.26958)
     (descr "Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0402")
     (path /598006AE)
@@ -445,7 +445,7 @@
   )
 
   (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 58AADA8F) (tstamp 5989E76B)
-    (at 167.505001 128.375)
+    (at 158.51886 85.60308)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /597863BA)
@@ -481,7 +481,7 @@
   )
 
   (module Resistors_SMD:R_0402_NoSilk (layer F.Cu) (tedit 58AAD992) (tstamp 5989E803)
-    (at 168.432381 133.375)
+    (at 149.44852 79.29372)
     (descr "Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0402")
     (path /5980069C)
@@ -515,7 +515,7 @@
   )
 
   (module Resistors_SMD:R_0402_NoSilk (layer F.Cu) (tedit 58AAD992) (tstamp 5989E79A)
-    (at 176.90619 132.425)
+    (at 140.27362 77.44968)
     (descr "Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0402")
     (path /59800012)
@@ -549,7 +549,7 @@
   )
 
   (module Resistors_SMD:R_0402_NoSilk (layer F.Cu) (tedit 58AAD992) (tstamp 5989E7B8)
-    (at 179.40619 127.925)
+    (at 140.0429 80.99298)
     (descr "Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0402")
     (path /59800323)
@@ -583,7 +583,7 @@
   )
 
   (module Resistors_SMD:R_0402_NoSilk (layer F.Cu) (tedit 58AAD992) (tstamp 5989E7D6)
-    (at 177.05619 127.925)
+    (at 139.90574 84.201)
     (descr "Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0402")
     (path /5980032F)
@@ -617,7 +617,7 @@
   )
 
   (module Resistors_SMD:R_0402_NoSilk (layer F.Cu) (tedit 58AAD992) (tstamp 5989E78B)
-    (at 179.25619 132.425)
+    (at 140.45184 75.48372)
     (descr "Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0402")
     (path /597FFD76)
@@ -651,7 +651,7 @@
   )
 
   (module Capacitors_SMD:C_0402_NoSilk (layer F.Cu) (tedit 58AA8408) (tstamp 5989E6C4)
-    (at 179.075001 110.975)
+    (at 158.23184 75.39736)
     (descr "Capacitor SMD 0402, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0402")
     (path /59681795/59774A8D)
@@ -787,7 +787,7 @@
   )
 
   (module Resistors_SMD:R_0402_NoSilk (layer F.Cu) (tedit 58AAD992) (tstamp 5989E7C7)
-    (at 171.25619 136.925)
+    (at 140.0429 82.49158)
     (descr "Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0402")
     (path /59800329)
@@ -821,7 +821,7 @@
   )
 
   (module Resistors_SMD:R_0402_NoSilk (layer F.Cu) (tedit 58AAD992) (tstamp 5989E7A9)
-    (at 174.55619 132.425)
+    (at 140.139 79.22006)
     (descr "Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0402")
     (path /598000A4)
@@ -855,7 +855,7 @@
   )
 
   (module Resistors_SMD:R_0402_NoSilk (layer F.Cu) (tedit 58AAD992) (tstamp 5989E7F4)
-    (at 171.732381 132.425)
+    (at 149.48958 77.45476)
     (descr "Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0402")
     (path /59800696)
@@ -1027,7 +1027,7 @@
   )
 
   (module Capacitors_SMD:C_0402_NoSilk (layer F.Cu) (tedit 58AA8408) (tstamp 5989E688)
-    (at 162.255001 132.995)
+    (at 155.32744 84.6963)
     (descr "Capacitor SMD 0402, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0402")
     (path /5978648B)
@@ -1061,7 +1061,7 @@
   )
 
   (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 58AADA8F) (tstamp 5989E77C)
-    (at 159.255001 133.375)
+    (at 155.15336 87.4903)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /59786570)
@@ -1097,7 +1097,7 @@
   )
 
   (module Resistors_SMD:R_0402_NoSilk (layer F.Cu) (tedit 58AAD992) (tstamp 5989E7E5)
-    (at 162.20619 137.515)
+    (at 149.62674 75.4761)
     (descr "Resistor SMD 0402, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0402")
     (path /59800690)

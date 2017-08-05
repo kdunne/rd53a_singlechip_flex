@@ -30,6 +30,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:rd53a
 LIBS:RD53A-cache
+LIBS:module
 LIBS:RD53A_single-cache
 EELAYER 25 0
 EELAYER END

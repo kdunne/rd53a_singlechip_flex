@@ -1,4 +1,4 @@
-update=Thu 03 Aug 2017 01:38:31 PM PDT
+update=Sat 05 Aug 2017 08:50:57 AM PDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -33,11 +33,9 @@ NetFmtName=
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
-[general]
-version=1
 [eeschema]
 version=1
-LibDir=/home/katie/git/kicad/RD53A
+LibDir=/home/katie/git/kicad/RD53A;../../../kicad
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -70,4 +68,6 @@ LibName28=contrib
 LibName29=valves
 LibName30=rd53a
 LibName31=RD53A-cache
-LibName32=/home/katie/git/kicad/module
+LibName32=module
+[general]
+version=1

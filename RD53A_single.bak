@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:RD53A_single-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -126,7 +127,7 @@ Wire Wire Line
 Wire Wire Line
 	6750 4300 7150 4300
 $Comp
-L Conn_single J1
+L Conn_single-RESCUE-RD53A_single J1
 U 1 1 5977E1D0
 P 2225 4725
 F 0 "J1" H 1875 7175 60  0000 C CNN
@@ -333,7 +334,7 @@ U 1 1 5978576B
 P 4475 3575
 F 0 "U2" H 4525 3725 59  0000 C CNN
 F 1 "Solder_Pad" H 4525 3825 59  0000 C CNN
-F 2 "module:Power_Pad" H 5325 3975 59  0001 C CNN
+F 2 "rd53a_wirebonds:Power_Pad" H 5325 3975 59  0001 C CNN
 F 3 "" H 5325 3975 59  0001 C CNN
 	1    4475 3575
 	-1   0    0    -1  
@@ -344,7 +345,7 @@ U 1 1 5978586C
 P 4475 3125
 F 0 "U1" H 4525 3275 59  0000 C CNN
 F 1 "Solder_Pad" H 4525 3375 59  0000 C CNN
-F 2 "module:Power_Pad" H 5325 3525 59  0001 C CNN
+F 2 "rd53a_wirebonds:Power_Pad" H 5325 3525 59  0001 C CNN
 F 3 "" H 5325 3525 59  0001 C CNN
 	1    4475 3125
 	-1   0    0    -1  
@@ -366,7 +367,7 @@ U 1 1 5978648B
 P 8450 5125
 F 0 "C1" H 8475 5225 50  0000 L CNN
 F 1 "C" H 8475 5025 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8488 4975 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0402_NoSilk" H 8488 4975 50  0001 C CNN
 F 3 "" H 8450 5125 50  0001 C CNN
 	1    8450 5125
 	1    0    0    -1  

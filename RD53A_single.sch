@@ -218,9 +218,9 @@ Text Label 8025 1625 0    60   ~ 0
 Text Label 8025 1800 0    60   ~ 0
 3_N
 Text Label 8025 925  0    60   ~ 0
-Clk_N
-Text Label 8025 1100 0    60   ~ 0
 Clk_P
+Text Label 8025 1100 0    60   ~ 0
+Clk_N
 Wire Wire Line
 	8025 925  8800 925 
 Wire Wire Line

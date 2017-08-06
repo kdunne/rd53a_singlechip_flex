@@ -96,7 +96,7 @@ U 1 1 5976CA8D
 P 9775 4725
 F 0 "U3" H 9925 4825 59  0000 C CNN
 F 1 "HV" H 9775 4825 59  0000 C CNN
-F 2 "" H 9775 4725 59  0001 C CNN
+F 2 "module:HV" H 9775 4725 59  0001 C CNN
 F 3 "" H 9775 4725 59  0001 C CNN
 	1    9775 4725
 	1    0    0    -1  
@@ -131,28 +131,28 @@ U 1 1 5977E1D0
 P 2225 4725
 F 0 "J1" H 1875 7175 60  0000 C CNN
 F 1 "Conn_single" H 1975 7075 60  0000 C CNN
-F 2 "" H 2225 4225 60  0001 C CNN
+F 2 "module:conn" H 2225 4225 60  0001 C CNN
 F 3 "" H 2225 4225 60  0001 C CNN
 	1    2225 4725
 	1    0    0    -1  
 $EndComp
 Text Label 3925 2625 2    60   ~ 0
-DO_CONN_1_P
+DO_CONN_0_P
 Text Label 3925 2775 2    60   ~ 0
-DO_CONN_2_P
+DO_CONN_1_P
 Text Label 3925 3075 2    60   ~ 0
+DO_CONN_2_P
+Text Label 725  4475 0    60   ~ 0
 DO_CONN_3_P
-Text Label 3925 3225 2    60   ~ 0
-DO_CONN_4_P
 Text Label 3925 2925 2    60   ~ 0
 GND
 Text Label 800  2825 0    60   ~ 0
-DO_CONN_2_N
+DO_CONN_1_N
 Text Label 800  2975 0    60   ~ 0
+DO_CONN_2_N
+Text Label 3850 4425 2    60   ~ 0
 DO_CONN_3_N
-Text Label 800  3275 0    60   ~ 0
-DO_CONN_4_N
-Text Label 800  3425 0    60   ~ 0
+Text Label 3850 4725 2    60   ~ 0
 CMD_CONN_N
 Text Label 800  3125 0    60   ~ 0
 GND
@@ -163,17 +163,13 @@ Wire Wire Line
 Wire Wire Line
 	800  3125 1675 3125
 Wire Wire Line
-	800  3275 1675 3275
+	3850 4425 2975 4425
 Wire Wire Line
-	800  3425 1675 3425
-Text Label 800  3575 0    60   ~ 0
-GND
+	3850 4725 2975 4725
+Text Label 4100 4875 2    60   ~ 0
+EXT_CMD_CLK_CONN_N
 Wire Wire Line
-	1675 3575 800  3575
-Text Label 800  3725 0    60   ~ 0
-CLK_CONN_N
-Wire Wire Line
-	800  3725 1675 3725
+	2975 4875 4100 4875
 Text Label 800  4025 0    60   ~ 0
 NTC_RET
 Wire Wire Line
@@ -187,51 +183,51 @@ Wire Wire Line
 Wire Wire Line
 	2975 3075 3925 3075
 Wire Wire Line
-	2975 3225 3925 3225
-Text Label 3925 3375 2    60   ~ 0
+	1675 4475 725  4475
+Text Label 3925 4575 2    60   ~ 0
 GND
 Wire Wire Line
-	3925 3375 2975 3375
-Text Label 3900 3525 2    60   ~ 0
+	3925 4575 2975 4575
+Text Label 750  4625 0    60   ~ 0
 CMD_CONN_P
 Wire Wire Line
-	2975 3525 3900 3525
-Text Label 3900 3675 2    60   ~ 0
-CLK_CONN_P
+	1675 4625 750  4625
+Text Label 600  4925 0    60   ~ 0
+EXT_CMD_CLK_CONN_P
 Wire Wire Line
-	2975 3675 3900 3675
-Text Label 3900 3825 2    60   ~ 0
+	600  4925 1675 4925
+Text Label 750  4775 0    60   ~ 0
 GND
 Wire Wire Line
-	2975 3825 3900 3825
+	1675 4775 750  4775
 Text Label 3900 4125 2    60   ~ 0
 NTC
 Wire Wire Line
 	3900 4125 2975 4125
-Text Label 3900 4725 2    60   ~ 0
+Text Label 750  3575 0    60   ~ 0
 HV_RET
 Wire Wire Line
-	3900 4725 2975 4725
-Text Label 800  4925 0    60   ~ 0
+	750  3575 1675 3575
+Text Label 3850 3675 2    60   ~ 0
 HV
 Wire Wire Line
-	800  4925 1675 4925
+	3850 3675 2975 3675
 Text Label 8025 1625 0    60   ~ 0
 0_P
 Text Label 8025 1800 0    60   ~ 0
 0_N
 Text Label 8025 925  0    60   ~ 0
-EXT_CMD_CLK_N
+Clk_N
 Text Label 8025 1100 0    60   ~ 0
-ECT_CMD_CLK_P
+Clk_P
 Wire Wire Line
 	8025 925  8800 925 
 Wire Wire Line
 	8025 1100 8800 1100
 Text Label 8025 1275 0    60   ~ 0
-CMD_N
-Text Label 8025 1450 0    60   ~ 0
 CMD_P
+Text Label 8025 1450 0    60   ~ 0
+CMD_N
 Wire Wire Line
 	8025 1275 8800 1275
 Text Label 8025 1975 0    60   ~ 0
@@ -247,9 +243,9 @@ Text Label 8025 2675 0    60   ~ 0
 Text Label 8025 2850 0    60   ~ 0
 3_N
 Text Label 10225 925  2    60   ~ 0
-EXT_CMD_CLK_CONN_N
-Text Label 10225 1100 2    60   ~ 0
 EXT_CMD_CLK_CONN_P
+Text Label 10225 1100 2    60   ~ 0
+EXT_CMD_CLK_CONN_N
 Wire Wire Line
 	10225 925  9100 925 
 Wire Wire Line
@@ -265,7 +261,7 @@ Wire Wire Line
 Wire Wire Line
 	8025 1800 8800 1800
 Text Label 10225 1450 2    60   ~ 0
-CMD_CONN_P
+CMD_CONN_N
 Text Label 10225 1625 2    60   ~ 0
 DO_CONN_0_P
 Wire Wire Line
@@ -337,7 +333,7 @@ U 1 1 5978576B
 P 4475 3575
 F 0 "U2" H 4525 3725 59  0000 C CNN
 F 1 "Solder_Pad" H 4525 3825 59  0000 C CNN
-F 2 "" H 5325 3975 59  0001 C CNN
+F 2 "module:Power_Pad" H 5325 3975 59  0001 C CNN
 F 3 "" H 5325 3975 59  0001 C CNN
 	1    4475 3575
 	-1   0    0    -1  
@@ -348,7 +344,7 @@ U 1 1 5978586C
 P 4475 3125
 F 0 "U1" H 4525 3275 59  0000 C CNN
 F 1 "Solder_Pad" H 4525 3375 59  0000 C CNN
-F 2 "" H 5325 3525 59  0001 C CNN
+F 2 "module:Power_Pad" H 5325 3525 59  0001 C CNN
 F 3 "" H 5325 3525 59  0001 C CNN
 	1    4475 3125
 	-1   0    0    -1  
@@ -370,7 +366,7 @@ U 1 1 5978648B
 P 8450 5125
 F 0 "C1" H 8475 5225 50  0000 L CNN
 F 1 "C" H 8475 5025 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402_NoSilk" H 8488 4975 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8488 4975 50  0001 C CNN
 F 3 "" H 8450 5125 50  0001 C CNN
 	1    8450 5125
 	1    0    0    -1  
@@ -561,21 +557,24 @@ F 3 "" H 8950 2850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 800  2525 0    60   ~ 0
-DO_CONN_1_N
+DO_CONN_0_N
 Wire Wire Line
 	800  2525 1675 2525
 Text Label 800  2675 0    60   ~ 0
 GND
 Wire Wire Line
 	800  2675 1675 2675
-NoConn ~ 2975 3975
-NoConn ~ 2975 4275
-NoConn ~ 2975 4425
-NoConn ~ 2975 4575
-NoConn ~ 2975 4875
 NoConn ~ 1675 4175
 NoConn ~ 1675 4325
-NoConn ~ 1675 4475
-NoConn ~ 1675 4625
-NoConn ~ 1675 4775
+NoConn ~ 2975 3225
+NoConn ~ 2975 3375
+NoConn ~ 2975 3525
+NoConn ~ 2975 3825
+NoConn ~ 2975 3975
+NoConn ~ 2975 4275
+NoConn ~ 1675 3875
+NoConn ~ 1675 3725
+NoConn ~ 1675 3425
+NoConn ~ 1675 3275
+NoConn ~ 9550 1825
 $EndSCHEMATC

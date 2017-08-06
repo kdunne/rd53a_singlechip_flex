@@ -137,22 +137,22 @@ F 3 "" H 2225 4225 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 3925 2625 2    60   ~ 0
-DO_CONN_1_P
+DO_CONN_0_P
 Text Label 3925 2775 2    60   ~ 0
-DO_CONN_2_P
+DO_CONN_1_P
 Text Label 3925 3075 2    60   ~ 0
+DO_CONN_2_P
+Text Label 725  4475 0    60   ~ 0
 DO_CONN_3_P
-Text Label 3925 3225 2    60   ~ 0
-DO_CONN_4_P
 Text Label 3925 2925 2    60   ~ 0
 GND
 Text Label 800  2825 0    60   ~ 0
-DO_CONN_2_N
+DO_CONN_1_N
 Text Label 800  2975 0    60   ~ 0
+DO_CONN_2_N
+Text Label 3850 4425 2    60   ~ 0
 DO_CONN_3_N
-Text Label 800  3275 0    60   ~ 0
-DO_CONN_4_N
-Text Label 800  3425 0    60   ~ 0
+Text Label 3850 4725 2    60   ~ 0
 CMD_CONN_N
 Text Label 800  3125 0    60   ~ 0
 GND
@@ -163,17 +163,13 @@ Wire Wire Line
 Wire Wire Line
 	800  3125 1675 3125
 Wire Wire Line
-	800  3275 1675 3275
+	3850 4425 2975 4425
 Wire Wire Line
-	800  3425 1675 3425
-Text Label 800  3575 0    60   ~ 0
-GND
+	3850 4725 2975 4725
+Text Label 4100 4875 2    60   ~ 0
+EXT_CMD_CLK_CONN_N
 Wire Wire Line
-	1675 3575 800  3575
-Text Label 800  3725 0    60   ~ 0
-CLK_CONN_N
-Wire Wire Line
-	800  3725 1675 3725
+	2975 4875 4100 4875
 Text Label 800  4025 0    60   ~ 0
 NTC_RET
 Wire Wire Line
@@ -187,69 +183,69 @@ Wire Wire Line
 Wire Wire Line
 	2975 3075 3925 3075
 Wire Wire Line
-	2975 3225 3925 3225
-Text Label 3925 3375 2    60   ~ 0
+	1675 4475 725  4475
+Text Label 3925 4575 2    60   ~ 0
 GND
 Wire Wire Line
-	3925 3375 2975 3375
-Text Label 3900 3525 2    60   ~ 0
+	3925 4575 2975 4575
+Text Label 750  4625 0    60   ~ 0
 CMD_CONN_P
 Wire Wire Line
-	2975 3525 3900 3525
-Text Label 3900 3675 2    60   ~ 0
-CLK_CONN_P
+	1675 4625 750  4625
+Text Label 600  4925 0    60   ~ 0
+EXT_CMD_CLK_CONN_P
 Wire Wire Line
-	2975 3675 3900 3675
-Text Label 3900 3825 2    60   ~ 0
+	600  4925 1675 4925
+Text Label 750  4775 0    60   ~ 0
 GND
 Wire Wire Line
-	2975 3825 3900 3825
+	1675 4775 750  4775
 Text Label 3900 4125 2    60   ~ 0
 NTC
 Wire Wire Line
 	3900 4125 2975 4125
-Text Label 3900 4725 2    60   ~ 0
+Text Label 750  3575 0    60   ~ 0
 HV_RET
 Wire Wire Line
-	3900 4725 2975 4725
-Text Label 800  4925 0    60   ~ 0
+	750  3575 1675 3575
+Text Label 3850 3675 2    60   ~ 0
 HV
 Wire Wire Line
-	800  4925 1675 4925
+	3850 3675 2975 3675
 Text Label 8025 1625 0    60   ~ 0
-0_P
+3_P
 Text Label 8025 1800 0    60   ~ 0
-0_N
+3_N
 Text Label 8025 925  0    60   ~ 0
-EXT_CMD_CLK_N
+Clk_N
 Text Label 8025 1100 0    60   ~ 0
-ECT_CMD_CLK_P
+Clk_P
 Wire Wire Line
 	8025 925  8800 925 
 Wire Wire Line
 	8025 1100 8800 1100
 Text Label 8025 1275 0    60   ~ 0
-CMD_N
-Text Label 8025 1450 0    60   ~ 0
 CMD_P
+Text Label 8025 1450 0    60   ~ 0
+CMD_N
 Wire Wire Line
 	8025 1275 8800 1275
 Text Label 8025 1975 0    60   ~ 0
-1_P
-Text Label 8025 2150 0    60   ~ 0
-1_N
-Text Label 8025 2325 0    60   ~ 0
 2_P
-Text Label 8025 2500 0    60   ~ 0
+Text Label 8025 2150 0    60   ~ 0
 2_N
+Text Label 8025 2325 0    60   ~ 0
+1_P
+Text Label 8025 2500 0    60   ~ 0
+1_N
 Text Label 8025 2675 0    60   ~ 0
-3_P
+0_P
 Text Label 8025 2850 0    60   ~ 0
-3_N
+0_N
 Text Label 10225 925  2    60   ~ 0
-EXT_CMD_CLK_CONN_N
-Text Label 10225 1100 2    60   ~ 0
 EXT_CMD_CLK_CONN_P
+Text Label 10225 1100 2    60   ~ 0
+EXT_CMD_CLK_CONN_N
 Wire Wire Line
 	10225 925  9100 925 
 Wire Wire Line
@@ -265,15 +261,15 @@ Wire Wire Line
 Wire Wire Line
 	8025 1800 8800 1800
 Text Label 10225 1450 2    60   ~ 0
-CMD_CONN_P
+CMD_CONN_N
 Text Label 10225 1625 2    60   ~ 0
-DO_CONN_0_P
+DO_CONN_3_P
 Wire Wire Line
 	10225 1450 9100 1450
 Wire Wire Line
 	10225 1625 9100 1625
 Text Label 10225 1800 2    60   ~ 0
-DO_CONN_0_N
+DO_CONN_3_N
 Wire Wire Line
 	10225 1800 9100 1800
 Wire Wire Line
@@ -283,15 +279,15 @@ Wire Wire Line
 Wire Wire Line
 	8025 2325 8800 2325
 Text Label 10225 1975 2    60   ~ 0
-DO_CONN_1_P
+DO_CONN_2_P
 Text Label 10225 2150 2    60   ~ 0
-DO_CONN_1_N
+DO_CONN_2_N
 Wire Wire Line
 	10225 1975 9100 1975
 Wire Wire Line
 	10225 2150 9100 2150
 Text Label 10225 2325 2    60   ~ 0
-DO_CONN_2_P
+DO_CONN_1_P
 Wire Wire Line
 	10225 2325 9100 2325
 Wire Wire Line
@@ -301,15 +297,15 @@ Wire Wire Line
 Wire Wire Line
 	8025 2850 8800 2850
 Text Label 10225 2500 2    60   ~ 0
-DO_CONN_2_N
+DO_CONN_1_N
 Text Label 10225 2675 2    60   ~ 0
-DO_CONN_3_P
+DO_CONN_0_P
 Wire Wire Line
 	10225 2500 9100 2500
 Wire Wire Line
 	10225 2675 9100 2675
 Text Label 10225 2850 2    60   ~ 0
-DO_CONN_3_N
+DO_CONN_0_N
 Wire Wire Line
 	10225 2850 9100 2850
 Text Label 8025 3550 0    60   ~ 0
@@ -561,21 +557,23 @@ F 3 "" H 8950 2850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 800  2525 0    60   ~ 0
-DO_CONN_1_N
+DO_CONN_0_N
 Wire Wire Line
 	800  2525 1675 2525
 Text Label 800  2675 0    60   ~ 0
 GND
 Wire Wire Line
 	800  2675 1675 2675
-NoConn ~ 2975 3975
-NoConn ~ 2975 4275
-NoConn ~ 2975 4425
-NoConn ~ 2975 4575
-NoConn ~ 2975 4875
 NoConn ~ 1675 4175
 NoConn ~ 1675 4325
-NoConn ~ 1675 4475
-NoConn ~ 1675 4625
-NoConn ~ 1675 4775
+NoConn ~ 2975 3225
+NoConn ~ 2975 3375
+NoConn ~ 2975 3525
+NoConn ~ 2975 3825
+NoConn ~ 2975 3975
+NoConn ~ 2975 4275
+NoConn ~ 1675 3875
+NoConn ~ 1675 3725
+NoConn ~ 1675 3425
+NoConn ~ 1675 3275
 $EndSCHEMATC

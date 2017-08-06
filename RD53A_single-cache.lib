@@ -19,11 +19,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Conn_single
+# Conn_single-RESCUE-RD53A_single
 #
-DEF Conn_single J 0 40 Y Y 1 F N
+DEF Conn_single-RESCUE-RD53A_single J 0 40 Y Y 1 F N
 F0 "J" -350 2450 60 H V C CNN
-F1 "Conn_single" -250 2350 60 H V C CNN
+F1 "Conn_single-RESCUE-RD53A_single" -250 2350 60 H V C CNN
 F2 "" 0 -500 60 H I C CNN
 F3 "" 0 -500 60 H I C CNN
 DRAW

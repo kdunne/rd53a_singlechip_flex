@@ -213,9 +213,9 @@ HV
 Wire Wire Line
 	3850 3675 2975 3675
 Text Label 8025 1625 0    60   ~ 0
-0_P
+3_P
 Text Label 8025 1800 0    60   ~ 0
-0_N
+3_N
 Text Label 8025 925  0    60   ~ 0
 Clk_N
 Text Label 8025 1100 0    60   ~ 0
@@ -231,17 +231,17 @@ CMD_N
 Wire Wire Line
 	8025 1275 8800 1275
 Text Label 8025 1975 0    60   ~ 0
-1_P
-Text Label 8025 2150 0    60   ~ 0
-1_N
-Text Label 8025 2325 0    60   ~ 0
 2_P
-Text Label 8025 2500 0    60   ~ 0
+Text Label 8025 2150 0    60   ~ 0
 2_N
+Text Label 8025 2325 0    60   ~ 0
+1_P
+Text Label 8025 2500 0    60   ~ 0
+1_N
 Text Label 8025 2675 0    60   ~ 0
-3_P
+0_P
 Text Label 8025 2850 0    60   ~ 0
-3_N
+0_N
 Text Label 10225 925  2    60   ~ 0
 EXT_CMD_CLK_CONN_P
 Text Label 10225 1100 2    60   ~ 0
@@ -263,13 +263,13 @@ Wire Wire Line
 Text Label 10225 1450 2    60   ~ 0
 CMD_CONN_N
 Text Label 10225 1625 2    60   ~ 0
-DO_CONN_0_P
+DO_CONN_3_P
 Wire Wire Line
 	10225 1450 9100 1450
 Wire Wire Line
 	10225 1625 9100 1625
 Text Label 10225 1800 2    60   ~ 0
-DO_CONN_0_N
+DO_CONN_3_N
 Wire Wire Line
 	10225 1800 9100 1800
 Wire Wire Line
@@ -279,15 +279,15 @@ Wire Wire Line
 Wire Wire Line
 	8025 2325 8800 2325
 Text Label 10225 1975 2    60   ~ 0
-DO_CONN_1_P
+DO_CONN_2_P
 Text Label 10225 2150 2    60   ~ 0
-DO_CONN_1_N
+DO_CONN_2_N
 Wire Wire Line
 	10225 1975 9100 1975
 Wire Wire Line
 	10225 2150 9100 2150
 Text Label 10225 2325 2    60   ~ 0
-DO_CONN_2_P
+DO_CONN_1_P
 Wire Wire Line
 	10225 2325 9100 2325
 Wire Wire Line
@@ -297,15 +297,15 @@ Wire Wire Line
 Wire Wire Line
 	8025 2850 8800 2850
 Text Label 10225 2500 2    60   ~ 0
-DO_CONN_2_N
+DO_CONN_1_N
 Text Label 10225 2675 2    60   ~ 0
-DO_CONN_3_P
+DO_CONN_0_P
 Wire Wire Line
 	10225 2500 9100 2500
 Wire Wire Line
 	10225 2675 9100 2675
 Text Label 10225 2850 2    60   ~ 0
-DO_CONN_3_N
+DO_CONN_0_N
 Wire Wire Line
 	10225 2850 9100 2850
 Text Label 8025 3550 0    60   ~ 0
@@ -576,5 +576,4 @@ NoConn ~ 1675 3875
 NoConn ~ 1675 3725
 NoConn ~ 1675 3425
 NoConn ~ 1675 3275
-NoConn ~ 9550 1825
 $EndSCHEMATC

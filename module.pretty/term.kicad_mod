@@ -1,0 +1,11 @@
+(module term (layer F.Cu) (tedit 58EEB4B4)
+  (fp_text reference U4 (at 5.29336 -1.19418) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value term (at 5.29336 -2.19418) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 1 smd rect (at -0.00254 0) (size 3.5 1) (layers F.Cu F.Paste F.Mask))
+  (pad e thru_hole circle (at 2.57556 0) (size 1.3716 1.3716) (drill 1.27) (layers *.Cu *.Mask)
+    (solder_mask_margin 0.127))
+)

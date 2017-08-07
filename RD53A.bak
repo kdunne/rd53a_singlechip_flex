@@ -369,7 +369,7 @@ Text Label 2300 14500 0    138  ~ 0
 Vin
 Text Label 6300 11400 1    60   ~ 0
 VIN
-Text Label 2050 6600 0    138  ~ 0
+Text Label 2050 6600 0    60   ~ 0
 VIN
 Text Label 14100 11400 1    60   ~ 0
 VIN
@@ -460,6 +460,81 @@ Text Label 17100 11500 1    60   ~ 0
 VIN
 Text Label 17400 12100 1    60   ~ 0
 VIN
+$Comp
+L R R22
+U 1 1 597FF060
+P 17400 11300
+F 0 "R22" V 17480 11300 50  0000 C CNN
+F 1 "R" V 17400 11300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" V 17330 11300 50  0001 C CNN
+F 3 "" H 17400 11300 50  0001 C CNN
+	1    17400 11300
+	1    0    0    -1  
+$EndComp
+Text Label 19900 3100 2    60   ~ 0
+GND
+Text Label 1950 4800 0    60   ~ 0
+VDDD
+Text Label 2200 9450 0    60   ~ 0
+POR_OUT_B
+$Comp
+L C C4
+U 1 1 597F86BB
+P 1950 9300
+F 0 "C4" H 1975 9400 50  0000 L CNN
+F 1 "C" H 1975 9200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402_NoSilk" H 1988 9150 50  0001 C CNN
+F 3 "" H 1950 9300 50  0001 C CNN
+	1    1950 9300
+	0    1    1    0   
+$EndComp
+Text Label 18100 11325 1    60   ~ 0
+PLL_RST_B
+Text Label 875  11250 0    60   ~ 0
+POR_OUT_B
+Text Label 2425 11250 2    60   ~ 0
+PLL_RST_B
+Text Label 10775 13575 1    60   ~ 0
+VDDA
+Text Label 10575 13575 1    60   ~ 0
+VDDD
+Text Label 10350 13575 1    60   ~ 0
+EXT_SUPPLY
+$Comp
+L R R21
+U 1 1 597FF25D
+P 10775 12850
+F 0 "R21" V 10855 12850 50  0000 C CNN
+F 1 "R" V 10775 12850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" V 10705 12850 50  0001 C CNN
+F 3 "" H 10775 12850 50  0001 C CNN
+	1    10775 12850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R20
+U 1 1 597FF257
+P 10575 12850
+F 0 "R20" V 10655 12850 50  0000 C CNN
+F 1 "R" V 10575 12850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" V 10505 12850 50  0001 C CNN
+F 3 "" H 10575 12850 50  0001 C CNN
+	1    10575 12850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R19
+U 1 1 597FF251
+P 10350 12850
+F 0 "R19" V 10430 12850 50  0000 C CNN
+F 1 "R" V 10350 12850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" V 10280 12850 50  0001 C CNN
+F 3 "" H 10350 12850 50  0001 C CNN
+	1    10350 12850
+	1    0    0    -1  
+$EndComp
+Text Label 6150 11425 1    60   ~ 0
+VDDA
 Wire Wire Line
 	4200 10600 4200 11300
 Wire Wire Line
@@ -850,14 +925,12 @@ Wire Wire Line
 	1650 5850 1350 5850
 Connection ~ 1350 5850
 Wire Wire Line
-	2400 8400 2850 8400
+	2025 8400 2850 8400
 Wire Wire Line
 	1650 7800 1350 7800
 Connection ~ 1350 7800
 Wire Wire Line
-	2400 6450 2850 6450
-Wire Wire Line
-	2850 7650 2400 7650
+	2050 6450 2850 6450
 Wire Wire Line
 	2400 7650 2400 6600
 Wire Wire Line
@@ -866,8 +939,6 @@ Connection ~ 5550 11050
 Wire Wire Line
 	5550 11800 5550 12100
 Connection ~ 5550 12100
-Wire Wire Line
-	6150 11050 6150 10600
 Wire Wire Line
 	7500 11775 7500 12100
 Connection ~ 7500 12100
@@ -880,12 +951,12 @@ Wire Wire Line
 	15300 11800 15300 12100
 Connection ~ 15300 12100
 Wire Wire Line
-	15900 11050 15900 10600
+	15900 10600 15900 11400
 Wire Wire Line
 	14700 10600 14700 11050
 Connection ~ 14550 11050
 Wire Wire Line
-	13950 11050 13950 10600
+	13950 10600 13950 11400
 Connection ~ 13350 11050
 Connection ~ 13350 12100
 Wire Wire Line
@@ -894,7 +965,7 @@ Wire Wire Line
 	18850 7300 19300 7300
 Connection ~ 19300 7450
 Wire Wire Line
-	19300 8050 18850 8050
+	18850 8050 19650 8050
 Wire Wire Line
 	19300 6100 18850 6100
 Connection ~ 19300 6700
@@ -920,7 +991,7 @@ Wire Wire Line
 Wire Wire Line
 	4500 11550 4500 10600
 Wire Wire Line
-	2850 4050 2600 4050
+	2175 4050 2850 4050
 Wire Wire Line
 	2600 4050 2600 4200
 Wire Wire Line
@@ -930,7 +1001,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 3600 2850 3600
 Wire Wire Line
-	2850 3150 2600 3150
+	2225 3150 2850 3150
 Wire Wire Line
 	2600 3150 2600 3300
 Wire Wire Line
@@ -978,30 +1049,10 @@ Wire Wire Line
 Wire Wire Line
 	16950 11300 17100 11300
 Connection ~ 17100 11300
-$Comp
-L R R22
-U 1 1 597FF060
-P 17400 11300
-F 0 "R22" V 17480 11300 50  0000 C CNN
-F 1 "R" V 17400 11300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 17330 11300 50  0001 C CNN
-F 3 "" H 17400 11300 50  0001 C CNN
-	1    17400 11300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	17400 11150 17400 10600
 Wire Wire Line
 	17400 11450 17400 12100
-Text Label 19900 3100 2    60   ~ 0
-GND
-Text Label 6150 11425 1    60   ~ 0
-VDDA
-Wire Wire Line
-	6150 11425 6150 11025
-Connection ~ 6150 11025
-Text Label 1950 4800 0    60   ~ 0
-VDDD
 Wire Wire Line
 	1950 4800 2850 4800
 Wire Wire Line
@@ -1015,31 +1066,12 @@ Connection ~ 2400 4650
 Wire Wire Line
 	2850 4500 2400 4500
 Connection ~ 2400 4500
-Text Label 2200 9450 0    60   ~ 0
-POR_OUT_B
 Wire Wire Line
 	2200 9450 2850 9450
-$Comp
-L C C4
-U 1 1 597F86BB
-P 1950 9300
-F 0 "C4" H 1975 9400 50  0000 L CNN
-F 1 "C" H 1975 9200 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402_NoSilk" H 1988 9150 50  0001 C CNN
-F 3 "" H 1950 9300 50  0001 C CNN
-	1    1950 9300
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1350 9300 1800 9300
-Text Label 18100 11325 1    60   ~ 0
-PLL_RST_B
 Wire Wire Line
 	18100 10600 18100 11325
-Text Label 875  11250 0    60   ~ 0
-POR_OUT_B
-Text Label 2425 11250 2    60   ~ 0
-PLL_RST_B
 Wire Wire Line
 	875  11250 2425 11250
 Wire Wire Line
@@ -1048,12 +1080,6 @@ Wire Wire Line
 	10575 13000 10575 13575
 Wire Wire Line
 	10350 13000 10350 13575
-Text Label 10775 13575 1    60   ~ 0
-VDDA
-Text Label 10575 13575 1    60   ~ 0
-VDDD
-Text Label 10350 13575 1    60   ~ 0
-EXT_SUPPLY
 Connection ~ 10575 12550
 Wire Wire Line
 	10775 12550 10775 12700
@@ -1062,39 +1088,6 @@ Wire Wire Line
 	10575 12550 10575 12700
 Wire Wire Line
 	10350 12550 10775 12550
-$Comp
-L R R21
-U 1 1 597FF25D
-P 10775 12850
-F 0 "R21" V 10855 12850 50  0000 C CNN
-F 1 "R" V 10775 12850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 10705 12850 50  0001 C CNN
-F 3 "" H 10775 12850 50  0001 C CNN
-	1    10775 12850
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R20
-U 1 1 597FF257
-P 10575 12850
-F 0 "R20" V 10655 12850 50  0000 C CNN
-F 1 "R" V 10575 12850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 10505 12850 50  0001 C CNN
-F 3 "" H 10575 12850 50  0001 C CNN
-	1    10575 12850
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R19
-U 1 1 597FF251
-P 10350 12850
-F 0 "R19" V 10430 12850 50  0000 C CNN
-F 1 "R" V 10350 12850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 10280 12850 50  0001 C CNN
-F 3 "" H 10350 12850 50  0001 C CNN
-	1    10350 12850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10350 10600 10350 12700
 Wire Wire Line
@@ -1108,4 +1101,64 @@ Wire Wire Line
 Connection ~ 10350 12150
 Wire Wire Line
 	9750 10600 9750 12150
+Wire Wire Line
+	6150 10600 6150 11425
+Text Label 8100 11350 1    60   ~ 0
+VDDD
+Wire Wire Line
+	8100 10525 8100 11350
+Text Label 2050 6450 0    60   ~ 0
+VDDA
+Text Label 2025 8400 0    60   ~ 0
+VDDD
+Wire Wire Line
+	2400 7650 2850 7650
+Text Label 13950 11400 1    60   ~ 0
+VDDA
+Text Label 15900 11400 1    60   ~ 0
+VDDD
+Text Label 19600 6100 2    60   ~ 0
+VDDD
+Wire Wire Line
+	19600 6100 18800 6100
+Text Label 19650 8050 2    60   ~ 0
+VDDA
+Text Label 4050 11400 1    60   ~ 0
+SLDO_IOFFSETA
+Text Label 10350 11450 1    60   ~ 0
+VDD_CML
+Text Label 12450 11400 1    60   ~ 0
+VDD_CML
+Text Label 9750 11425 1    60   ~ 0
+VDD_PLL
+Text Label 17250 11300 1    60   ~ 0
+SLDO_IOFFSETD
+Text Label 16800 11300 1    60   ~ 0
+SLDO_VREFD
+Text Label 16950 11275 1    60   ~ 0
+SLDO_RIND
+Text Label 17100 11200 1    60   ~ 0
+VDDD_SHUNT
+Text Label 4200 11250 1    60   ~ 0
+VDDA_SHUNT
+Text Label 4650 11325 1    60   ~ 0
+SLDO_VREFA
+Text Label 18850 3550 0    60   ~ 0
+BYPASS_CDR
+Text Label 18850 3700 0    60   ~ 0
+BYPASS_CMD
+Text Label 2475 4350 0    60   ~ 0
+TRIM0
+Text Label 2475 4500 0    60   ~ 0
+TRIM1
+Text Label 2475 4650 0    60   ~ 0
+TRIM2
+Text Label 2475 4800 0    60   ~ 0
+TRIM3
+Text Label 2175 4050 0    60   ~ 0
+IREFIN/OUT
+Connection ~ 2600 4050
+Text Label 2225 3150 0    60   ~ 0
+VREFIN/OUT
+Connection ~ 2600 3150
 $EndSCHEMATC

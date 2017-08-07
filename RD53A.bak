@@ -1147,14 +1147,6 @@ Text Label 18850 3550 0    60   ~ 0
 BYPASS_CDR
 Text Label 18850 3700 0    60   ~ 0
 BYPASS_CMD
-Text Label 2475 4350 0    60   ~ 0
-TRIM0
-Text Label 2475 4500 0    60   ~ 0
-TRIM1
-Text Label 2475 4650 0    60   ~ 0
-TRIM2
-Text Label 2475 4800 0    60   ~ 0
-TRIM3
 Text Label 2175 4050 0    60   ~ 0
 IREFIN/OUT
 Connection ~ 2600 4050

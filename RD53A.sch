@@ -535,6 +535,81 @@ F 3 "" H 10350 12850 50  0001 C CNN
 $EndComp
 Text Label 6150 11425 1    60   ~ 0
 VDDA
+Text Label 8100 11350 1    60   ~ 0
+VDDD
+Text Label 2050 6450 0    60   ~ 0
+VDDA
+Text Label 2025 8400 0    60   ~ 0
+VDDD
+Text Label 13950 11400 1    60   ~ 0
+VDDA
+Text Label 15900 11400 1    60   ~ 0
+VDDD
+Text Label 19600 6100 2    60   ~ 0
+VDDD
+Text Label 19650 8050 2    60   ~ 0
+VDDA
+Text Label 4050 11400 1    60   ~ 0
+SLDO_IOFFSETA
+Text Label 10350 11450 1    60   ~ 0
+VDD_CML
+Text Label 12450 11400 1    60   ~ 0
+VDD_CML
+Text Label 9750 11425 1    60   ~ 0
+VDD_PLL
+Text Label 17250 11300 1    60   ~ 0
+SLDO_IOFFSETD
+Text Label 16800 11300 1    60   ~ 0
+SLDO_VREFD
+Text Label 16950 11275 1    60   ~ 0
+SLDO_RIND
+Text Label 17100 11200 1    60   ~ 0
+VDDD_SHUNT
+Text Label 4200 11250 1    60   ~ 0
+VDDA_SHUNT
+Text Label 4650 11325 1    60   ~ 0
+SLDO_VREFA
+Text Label 18850 3550 0    60   ~ 0
+BYPASS_CDR
+Text Label 18850 3700 0    60   ~ 0
+BYPASS_CMD
+Text Label 2150 4050 0    60   ~ 0
+IREFIN_OUT
+Text Label 2200 3150 0    60   ~ 0
+VREFIN_OUT
+$Comp
+L C C16
+U 1 1 598928C4
+P 1750 3000
+F 0 "C16" H 1775 3100 50  0000 L CNN
+F 1 "C" H 1775 2900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402_NoSilk" H 1788 2850 50  0001 C CNN
+F 3 "" H 1750 3000 50  0001 C CNN
+	1    1750 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L C C18
+U 1 1 59892B8A
+P 2050 3150
+F 0 "C18" H 2075 3250 50  0000 L CNN
+F 1 "C" H 2075 3050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402_NoSilk" H 2088 3000 50  0001 C CNN
+F 3 "" H 2050 3150 50  0001 C CNN
+	1    2050 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L C C17
+U 1 1 59892E97
+P 2000 4050
+F 0 "C17" H 2025 4150 50  0000 L CNN
+F 1 "C" H 2025 3950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402_NoSilk" H 2038 3900 50  0001 C CNN
+F 3 "" H 2000 4050 50  0001 C CNN
+	1    2000 4050
+	0    1    1    0   
+$EndComp
 Wire Wire Line
 	4200 10600 4200 11300
 Wire Wire Line
@@ -874,7 +949,7 @@ Wire Wire Line
 	2850 6300 2400 6300
 Connection ~ 2400 6300
 Wire Wire Line
-	1350 4950 1350 9300
+	1350 3000 1350 9300
 Wire Wire Line
 	1950 7800 2850 7800
 Connection ~ 2400 8400
@@ -991,8 +1066,6 @@ Wire Wire Line
 Wire Wire Line
 	4500 11550 4500 10600
 Wire Wire Line
-	2175 4050 2850 4050
-Wire Wire Line
 	2600 4050 2600 4200
 Wire Wire Line
 	2600 4200 2850 4200
@@ -1000,8 +1073,6 @@ Wire Wire Line
 	1900 3450 2850 3450
 Wire Wire Line
 	1900 3600 2850 3600
-Wire Wire Line
-	2225 3150 2850 3150
 Wire Wire Line
 	2600 3150 2600 3300
 Wire Wire Line
@@ -1103,54 +1174,24 @@ Wire Wire Line
 	9750 10600 9750 12150
 Wire Wire Line
 	6150 10600 6150 11425
-Text Label 8100 11350 1    60   ~ 0
-VDDD
 Wire Wire Line
 	8100 10525 8100 11350
-Text Label 2050 6450 0    60   ~ 0
-VDDA
-Text Label 2025 8400 0    60   ~ 0
-VDDD
 Wire Wire Line
 	2400 7650 2850 7650
-Text Label 13950 11400 1    60   ~ 0
-VDDA
-Text Label 15900 11400 1    60   ~ 0
-VDDD
-Text Label 19600 6100 2    60   ~ 0
-VDDD
 Wire Wire Line
 	19600 6100 18800 6100
-Text Label 19650 8050 2    60   ~ 0
-VDDA
-Text Label 4050 11400 1    60   ~ 0
-SLDO_IOFFSETA
-Text Label 10350 11450 1    60   ~ 0
-VDD_CML
-Text Label 12450 11400 1    60   ~ 0
-VDD_CML
-Text Label 9750 11425 1    60   ~ 0
-VDD_PLL
-Text Label 17250 11300 1    60   ~ 0
-SLDO_IOFFSETD
-Text Label 16800 11300 1    60   ~ 0
-SLDO_VREFD
-Text Label 16950 11275 1    60   ~ 0
-SLDO_RIND
-Text Label 17100 11200 1    60   ~ 0
-VDDD_SHUNT
-Text Label 4200 11250 1    60   ~ 0
-VDDA_SHUNT
-Text Label 4650 11325 1    60   ~ 0
-SLDO_VREFA
-Text Label 18850 3550 0    60   ~ 0
-BYPASS_CDR
-Text Label 18850 3700 0    60   ~ 0
-BYPASS_CMD
-Text Label 2175 4050 0    60   ~ 0
-IREFIN/OUT
 Connection ~ 2600 4050
-Text Label 2225 3150 0    60   ~ 0
-VREFIN/OUT
 Connection ~ 2600 3150
+Wire Wire Line
+	1600 3000 1350 3000
+Wire Wire Line
+	1900 3150 1350 3150
+Connection ~ 1350 3150
+Wire Wire Line
+	2150 4050 2850 4050
+Wire Wire Line
+	2200 3150 2850 3150
+Wire Wire Line
+	1850 4050 1350 4050
+Connection ~ 1350 4050
 $EndSCHEMATC

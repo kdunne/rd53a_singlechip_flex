@@ -71,26 +71,14 @@ Text Label 7150 3550 2    60   ~ 0
 0_P
 Text Label 7150 3650 2    60   ~ 0
 0_N
-Wire Wire Line
-	6750 3550 7150 3550
-Wire Wire Line
-	6750 3650 7150 3650
-Text Label 7150 3050 2    60   ~ 0
-CLK_N
-Text Label 7150 3150 2    60   ~ 0
-CLK_P
-Wire Wire Line
-	6750 3050 7150 3050
-Wire Wire Line
-	6750 3150 7150 3150
+Text Label 7550 3050 2    60   ~ 0
+EXT_CMD_CLK_N
+Text Label 7550 3150 2    60   ~ 0
+EXT_CMD_CLK_P
 Text Label 7150 3300 2    60   ~ 0
 CMD_N
 Text Label 7150 3400 2    60   ~ 0
 CMD_P
-Wire Wire Line
-	6750 3300 7150 3300
-Wire Wire Line
-	6750 3400 7150 3400
 $Comp
 L HV U3
 U 1 1 5976CA8D
@@ -106,26 +94,14 @@ Text Label 7150 3800 2    60   ~ 0
 1_P
 Text Label 7150 3900 2    60   ~ 0
 1_N
-Wire Wire Line
-	6750 3900 7150 3900
-Wire Wire Line
-	6750 3800 7150 3800
 Text Label 7150 4050 2    60   ~ 0
 2_P
 Text Label 7150 4150 2    60   ~ 0
 2_N
-Wire Wire Line
-	6750 4050 7150 4050
-Wire Wire Line
-	6750 4150 7150 4150
 Text Label 7150 4300 2    60   ~ 0
 3_P
 Text Label 7150 4400 2    60   ~ 0
 3_N
-Wire Wire Line
-	6750 4400 7150 4400
-Wire Wire Line
-	6750 4300 7150 4300
 $Comp
 L Conn_single-RESCUE-RD53A_single J1
 U 1 1 5977E1D0
@@ -138,177 +114,55 @@ F 3 "" H 2225 4225 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 3925 2625 2    60   ~ 0
-DO_CONN_0_P
+0_P
 Text Label 3925 2775 2    60   ~ 0
-DO_CONN_1_P
+1_P
 Text Label 3925 3075 2    60   ~ 0
-DO_CONN_2_P
+2_P
 Text Label 725  4475 0    60   ~ 0
-DO_CONN_3_P
+3_P
 Text Label 3925 2925 2    60   ~ 0
 GND
 Text Label 800  2825 0    60   ~ 0
-DO_CONN_1_N
+1_N
 Text Label 800  2975 0    60   ~ 0
-DO_CONN_2_N
+2_N
 Text Label 3850 4425 2    60   ~ 0
-DO_CONN_3_N
+3_N
 Text Label 3850 4725 2    60   ~ 0
 CMD_CONN_N
 Text Label 800  3125 0    60   ~ 0
 GND
-Wire Wire Line
-	800  2825 1675 2825
-Wire Wire Line
-	800  2975 1675 2975
-Wire Wire Line
-	800  3125 1675 3125
-Wire Wire Line
-	3850 4425 2975 4425
-Wire Wire Line
-	3850 4725 2975 4725
 Text Label 4100 4875 2    60   ~ 0
 EXT_CMD_CLK_CONN_N
-Wire Wire Line
-	2975 4875 4100 4875
 Text Label 800  4025 0    60   ~ 0
 NTC_RET
-Wire Wire Line
-	800  4025 1675 4025
-Wire Wire Line
-	2975 2625 3925 2625
-Wire Wire Line
-	2975 2775 3925 2775
-Wire Wire Line
-	2975 2925 3925 2925
-Wire Wire Line
-	2975 3075 3925 3075
-Wire Wire Line
-	1675 4475 725  4475
 Text Label 3925 4575 2    60   ~ 0
 GND
-Wire Wire Line
-	3925 4575 2975 4575
 Text Label 750  4625 0    60   ~ 0
 CMD_CONN_P
-Wire Wire Line
-	1675 4625 750  4625
 Text Label 600  4925 0    60   ~ 0
 EXT_CMD_CLK_CONN_P
-Wire Wire Line
-	600  4925 1675 4925
 Text Label 750  4775 0    60   ~ 0
 GND
-Wire Wire Line
-	1675 4775 750  4775
 Text Label 3900 4125 2    60   ~ 0
 NTC
-Wire Wire Line
-	3900 4125 2975 4125
 Text Label 750  3575 0    60   ~ 0
 HV_RET
-Wire Wire Line
-	750  3575 1675 3575
 Text Label 3850 3675 2    60   ~ 0
 HV
-Wire Wire Line
-	3850 3675 2975 3675
-Text Label 8025 1625 0    60   ~ 0
-3_P
-Text Label 8025 1800 0    60   ~ 0
-3_N
-Text Label 8025 925  0    60   ~ 0
-Clk_P
-Text Label 8025 1100 0    60   ~ 0
-Clk_N
-Wire Wire Line
-	8025 925  8800 925 
-Wire Wire Line
-	8025 1100 8800 1100
-Text Label 8025 1275 0    60   ~ 0
+Text Label 6320 2280 0    60   ~ 0
 CMD_P
-Text Label 8025 1450 0    60   ~ 0
+Text Label 6320 2480 0    60   ~ 0
 CMD_N
-Wire Wire Line
-	8025 1275 8800 1275
-Text Label 8025 1975 0    60   ~ 0
-2_P
-Text Label 8025 2150 0    60   ~ 0
-2_N
-Text Label 8025 2325 0    60   ~ 0
-1_P
-Text Label 8025 2500 0    60   ~ 0
-1_N
-Text Label 8025 2675 0    60   ~ 0
-0_P
-Text Label 8025 2850 0    60   ~ 0
-0_N
-Text Label 10225 925  2    60   ~ 0
+Text Label 9570 1780 2    60   ~ 0
 EXT_CMD_CLK_CONN_P
-Text Label 10225 1100 2    60   ~ 0
+Text Label 9570 1980 2    60   ~ 0
 EXT_CMD_CLK_CONN_N
-Wire Wire Line
-	10225 925  9100 925 
-Wire Wire Line
-	10225 1100 9100 1100
-Text Label 10225 1275 2    60   ~ 0
+Text Label 9570 2280 2    60   ~ 0
 CMD_CONN_P
-Wire Wire Line
-	10225 1275 9100 1275
-Wire Wire Line
-	8025 1450 8800 1450
-Wire Wire Line
-	8025 1625 8800 1625
-Wire Wire Line
-	8025 1800 8800 1800
-Text Label 10225 1450 2    60   ~ 0
+Text Label 9570 2480 2    60   ~ 0
 CMD_CONN_N
-Text Label 10225 1625 2    60   ~ 0
-DO_CONN_3_P
-Wire Wire Line
-	10225 1450 9100 1450
-Wire Wire Line
-	10225 1625 9100 1625
-Text Label 10225 1800 2    60   ~ 0
-DO_CONN_3_N
-Wire Wire Line
-	10225 1800 9100 1800
-Wire Wire Line
-	8025 1975 8800 1975
-Wire Wire Line
-	8025 2150 8800 2150
-Wire Wire Line
-	8025 2325 8800 2325
-Text Label 10225 1975 2    60   ~ 0
-DO_CONN_2_P
-Text Label 10225 2150 2    60   ~ 0
-DO_CONN_2_N
-Wire Wire Line
-	10225 1975 9100 1975
-Wire Wire Line
-	10225 2150 9100 2150
-Text Label 10225 2325 2    60   ~ 0
-DO_CONN_1_P
-Wire Wire Line
-	10225 2325 9100 2325
-Wire Wire Line
-	8025 2500 8800 2500
-Wire Wire Line
-	8025 2675 8800 2675
-Wire Wire Line
-	8025 2850 8800 2850
-Text Label 10225 2500 2    60   ~ 0
-DO_CONN_1_N
-Text Label 10225 2675 2    60   ~ 0
-DO_CONN_0_P
-Wire Wire Line
-	10225 2500 9100 2500
-Wire Wire Line
-	10225 2675 9100 2675
-Text Label 10225 2850 2    60   ~ 0
-DO_CONN_0_N
-Wire Wire Line
-	10225 2850 9100 2850
 Text Label 8025 3550 0    60   ~ 0
 NTC
 $Comp
@@ -324,10 +178,6 @@ F 3 "" H 8925 3550 50  0001 C CNN
 $EndComp
 Text Label 10225 3550 2    60   ~ 0
 NTC_RET
-Wire Wire Line
-	8025 3550 8725 3550
-Wire Wire Line
-	10225 3550 9125 3550
 $Comp
 L Solder_Pad U2
 U 1 1 5978576B
@@ -351,10 +201,10 @@ F 3 "" H 5325 3525 59  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R R1
+L R R3
 U 1 1 597863BA
 P 8825 4725
-F 0 "R1" V 8905 4725 50  0000 C CNN
+F 0 "R3" V 8905 4725 50  0000 C CNN
 F 1 "R" V 8825 4725 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 8755 4725 50  0001 C CNN
 F 3 "" H 8825 4725 50  0001 C CNN
@@ -362,55 +212,185 @@ F 3 "" H 8825 4725 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C1
+L C C5
 U 1 1 5978648B
-P 8450 5125
-F 0 "C1" H 8475 5225 50  0000 L CNN
-F 1 "C" H 8475 5025 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402_NoSilk" H 8488 4975 50  0001 C CNN
-F 3 "" H 8450 5125 50  0001 C CNN
-	1    8450 5125
+P 9370 5070
+F 0 "C5" H 9395 5170 50  0000 L CNN
+F 1 "C" H 9395 4970 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 9408 4920 50  0001 C CNN
+F 3 "" H 9370 5070 50  0001 C CNN
+	1    9370 5070
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R2
+L R R4
 U 1 1 59786570
-P 8825 5325
-F 0 "R2" V 8905 5325 50  0000 C CNN
-F 1 "R" V 8825 5325 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 8755 5325 50  0001 C CNN
-F 3 "" H 8825 5325 50  0001 C CNN
-	1    8825 5325
+P 9220 5510
+F 0 "R4" V 9300 5510 50  0000 C CNN
+F 1 "R" V 9220 5510 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 9150 5510 50  0001 C CNN
+F 3 "" H 9220 5510 50  0001 C CNN
+	1    9220 5510
+	0    -1   -1   0   
+$EndComp
+Text Label 8450 4725 0    60   ~ 0
+HV
+Text Label 800  2525 0    60   ~ 0
+0_N
+Text Label 800  2675 0    60   ~ 0
+GND
+NoConn ~ 1675 4175
+NoConn ~ 1675 4325
+NoConn ~ 2975 3225
+NoConn ~ 2975 3375
+NoConn ~ 2975 3525
+NoConn ~ 2975 3825
+NoConn ~ 2975 3975
+NoConn ~ 2975 4275
+NoConn ~ 1675 3875
+NoConn ~ 1675 3725
+NoConn ~ 1675 3425
+NoConn ~ 1675 3275
+$Comp
+L R_Small R1
+U 1 1 598EE854
+P 8220 1880
+F 0 "R1" H 8250 1900 50  0000 L CNN
+F 1 "100" H 8250 1840 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" H 8220 1880 50  0001 C CNN
+F 3 "" H 8220 1880 50  0001 C CNN
+	1    8220 1880
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 598EEBE9
+P 8220 2380
+F 0 "R2" H 8250 2400 50  0000 L CNN
+F 1 "100" H 8250 2340 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" H 8220 2380 50  0001 C CNN
+F 3 "" H 8220 2380 50  0001 C CNN
+	1    8220 2380
+	1    0    0    -1  
+$EndComp
+Text Label 6320 1980 0    60   ~ 0
+EXT_CMD_CLK_N
+Text Label 6320 1780 0    60   ~ 0
+EXT_CMD_CLK_P
+$Comp
+L C C1
+U 1 1 5991F368
+P 7470 1780
+F 0 "C1" H 7495 1880 50  0000 L CNN
+F 1 "C" H 7495 1680 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402_NoSilk" H 7508 1630 50  0001 C CNN
+F 3 "" H 7470 1780 50  0001 C CNN
+	1    7470 1780
 	0    1    1    0   
 $EndComp
-Text Label 9300 4725 0    60   ~ 0
-HV
+$Comp
+L C C2
+U 1 1 5991F5B7
+P 7470 1980
+F 0 "C2" H 7495 2080 50  0000 L CNN
+F 1 "C" H 7495 1880 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402_NoSilk" H 7508 1830 50  0001 C CNN
+F 3 "" H 7470 1980 50  0001 C CNN
+	1    7470 1980
+	0    1    1    0   
+$EndComp
+$Comp
+L C C3
+U 1 1 5991F643
+P 7470 2280
+F 0 "C3" H 7495 2380 50  0000 L CNN
+F 1 "C" H 7495 2180 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402_NoSilk" H 7508 2130 50  0001 C CNN
+F 3 "" H 7470 2280 50  0001 C CNN
+	1    7470 2280
+	0    1    1    0   
+$EndComp
+$Comp
+L C C4
+U 1 1 5991F6DE
+P 7470 2480
+F 0 "C4" H 7495 2580 50  0000 L CNN
+F 1 "C" H 7495 2380 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402_NoSilk" H 7508 2330 50  0001 C CNN
+F 3 "" H 7470 2480 50  0001 C CNN
+	1    7470 2480
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6750 3550 7150 3550
+Wire Wire Line
+	6750 3650 7150 3650
+Wire Wire Line
+	6750 3050 7550 3050
+Wire Wire Line
+	6750 3150 7550 3150
+Wire Wire Line
+	6750 3300 7150 3300
+Wire Wire Line
+	6750 3400 7150 3400
+Wire Wire Line
+	6750 3900 7150 3900
+Wire Wire Line
+	6750 3800 7150 3800
+Wire Wire Line
+	6750 4050 7150 4050
+Wire Wire Line
+	6750 4150 7150 4150
+Wire Wire Line
+	6750 4400 7150 4400
+Wire Wire Line
+	6750 4300 7150 4300
+Wire Wire Line
+	800  2825 1675 2825
+Wire Wire Line
+	800  2975 1675 2975
+Wire Wire Line
+	800  3125 1675 3125
+Wire Wire Line
+	3850 4425 2975 4425
+Wire Wire Line
+	3850 4725 2975 4725
+Wire Wire Line
+	2975 4875 4100 4875
+Wire Wire Line
+	800  4025 1675 4025
+Wire Wire Line
+	2975 2625 3925 2625
+Wire Wire Line
+	2975 2775 3925 2775
+Wire Wire Line
+	2975 2925 3925 2925
+Wire Wire Line
+	2975 3075 3925 3075
+Wire Wire Line
+	1675 4475 725  4475
+Wire Wire Line
+	3925 4575 2975 4575
+Wire Wire Line
+	1675 4625 750  4625
+Wire Wire Line
+	600  4925 1675 4925
+Wire Wire Line
+	1675 4775 750  4775
+Wire Wire Line
+	3900 4125 2975 4125
+Wire Wire Line
+	750  3575 1675 3575
+Wire Wire Line
+	3850 3675 2975 3675
+Wire Wire Line
+	8025 3550 8725 3550
+Wire Wire Line
+	10225 3550 9125 3550
 Wire Wire Line
 	8975 4725 9625 4725
 Wire Wire Line
 	8675 4725 8450 4725
-Wire Wire Line
-	8450 4725 8450 4975
-Text Label 9450 5325 2    60   ~ 0
-HV_RET
-Wire Wire Line
-	9450 5325 8975 5325
-$Comp
-L GND #PWR01
-U 1 1 59786E20
-P 8450 5700
-F 0 "#PWR01" H 8450 5450 50  0001 C CNN
-F 1 "GND" H 8450 5550 50  0000 C CNN
-F 2 "" H 8450 5700 50  0001 C CNN
-F 3 "" H 8450 5700 50  0001 C CNN
-	1    8450 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8450 5275 8450 5700
-Wire Wire Line
-	8675 5325 8450 5325
-Connection ~ 8450 5325
 Wire Wire Line
 	4675 3075 5450 3075
 Wire Wire Line
@@ -425,156 +405,39 @@ Wire Wire Line
 Wire Wire Line
 	4875 3175 4875 3075
 Connection ~ 4875 3075
-$Comp
-L R R3
-U 1 1 597FFD76
-P 8950 925
-F 0 "R3" V 9030 925 50  0000 C CNN
-F 1 "R" V 8950 925 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 8880 925 50  0001 C CNN
-F 3 "" H 8950 925 50  0001 C CNN
-	1    8950 925 
-	0    1    1    0   
-$EndComp
-$Comp
-L R R4
-U 1 1 59800012
-P 8950 1100
-F 0 "R4" V 9030 1100 50  0000 C CNN
-F 1 "R" V 8950 1100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 8880 1100 50  0001 C CNN
-F 3 "" H 8950 1100 50  0001 C CNN
-	1    8950 1100
-	0    1    1    0   
-$EndComp
-$Comp
-L R R5
-U 1 1 598000A4
-P 8950 1275
-F 0 "R5" V 9030 1275 50  0000 C CNN
-F 1 "R" V 8950 1275 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 8880 1275 50  0001 C CNN
-F 3 "" H 8950 1275 50  0001 C CNN
-	1    8950 1275
-	0    1    1    0   
-$EndComp
-$Comp
-L R R6
-U 1 1 59800323
-P 8950 1450
-F 0 "R6" V 9030 1450 50  0000 C CNN
-F 1 "R" V 8950 1450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 8880 1450 50  0001 C CNN
-F 3 "" H 8950 1450 50  0001 C CNN
-	1    8950 1450
-	0    1    1    0   
-$EndComp
-$Comp
-L R R7
-U 1 1 59800329
-P 8950 1625
-F 0 "R7" V 9030 1625 50  0000 C CNN
-F 1 "R" V 8950 1625 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 8880 1625 50  0001 C CNN
-F 3 "" H 8950 1625 50  0001 C CNN
-	1    8950 1625
-	0    1    1    0   
-$EndComp
-$Comp
-L R R8
-U 1 1 5980032F
-P 8950 1800
-F 0 "R8" V 9030 1800 50  0000 C CNN
-F 1 "R" V 8950 1800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 8880 1800 50  0001 C CNN
-F 3 "" H 8950 1800 50  0001 C CNN
-	1    8950 1800
-	0    1    1    0   
-$EndComp
-$Comp
-L R R9
-U 1 1 59800690
-P 8950 1975
-F 0 "R9" V 9030 1975 50  0000 C CNN
-F 1 "R" V 8950 1975 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 8880 1975 50  0001 C CNN
-F 3 "" H 8950 1975 50  0001 C CNN
-	1    8950 1975
-	0    1    1    0   
-$EndComp
-$Comp
-L R R10
-U 1 1 59800696
-P 8950 2150
-F 0 "R10" V 9030 2150 50  0000 C CNN
-F 1 "R" V 8950 2150 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 8880 2150 50  0001 C CNN
-F 3 "" H 8950 2150 50  0001 C CNN
-	1    8950 2150
-	0    1    1    0   
-$EndComp
-$Comp
-L R R11
-U 1 1 5980069C
-P 8950 2325
-F 0 "R11" V 9030 2325 50  0000 C CNN
-F 1 "R" V 8950 2325 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 8880 2325 50  0001 C CNN
-F 3 "" H 8950 2325 50  0001 C CNN
-	1    8950 2325
-	0    1    1    0   
-$EndComp
-$Comp
-L R R12
-U 1 1 598006A2
-P 8950 2500
-F 0 "R12" V 9030 2500 50  0000 C CNN
-F 1 "R" V 8950 2500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 8880 2500 50  0001 C CNN
-F 3 "" H 8950 2500 50  0001 C CNN
-	1    8950 2500
-	0    1    1    0   
-$EndComp
-$Comp
-L R R13
-U 1 1 598006A8
-P 8950 2675
-F 0 "R13" V 9030 2675 50  0000 C CNN
-F 1 "R" V 8950 2675 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 8880 2675 50  0001 C CNN
-F 3 "" H 8950 2675 50  0001 C CNN
-	1    8950 2675
-	0    1    1    0   
-$EndComp
-$Comp
-L R R14
-U 1 1 598006AE
-P 8950 2850
-F 0 "R14" V 9030 2850 50  0000 C CNN
-F 1 "R" V 8950 2850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402_NoSilk" V 8880 2850 50  0001 C CNN
-F 3 "" H 8950 2850 50  0001 C CNN
-	1    8950 2850
-	0    1    1    0   
-$EndComp
-Text Label 800  2525 0    60   ~ 0
-DO_CONN_0_N
 Wire Wire Line
 	800  2525 1675 2525
-Text Label 800  2675 0    60   ~ 0
-GND
 Wire Wire Line
 	800  2675 1675 2675
-NoConn ~ 1675 4175
-NoConn ~ 1675 4325
-NoConn ~ 2975 3225
-NoConn ~ 2975 3375
-NoConn ~ 2975 3525
-NoConn ~ 2975 3825
-NoConn ~ 2975 3975
-NoConn ~ 2975 4275
-NoConn ~ 1675 3875
-NoConn ~ 1675 3725
-NoConn ~ 1675 3425
-NoConn ~ 1675 3275
+Connection ~ 8220 2480
+Connection ~ 8220 2280
+Connection ~ 8220 1780
+Connection ~ 8220 1980
+Wire Wire Line
+	6320 1780 7320 1780
+Wire Wire Line
+	7620 1780 9570 1780
+Wire Wire Line
+	7620 1980 9570 1980
+Wire Wire Line
+	7320 1980 6320 1980
+Wire Wire Line
+	6320 2280 7320 2280
+Wire Wire Line
+	7620 2280 9570 2280
+Wire Wire Line
+	7620 2480 9570 2480
+Wire Wire Line
+	7320 2480 6320 2480
+Wire Wire Line
+	9370 4920 9370 4725
+Connection ~ 9370 4725
+Wire Wire Line
+	9370 5510 9370 5220
+Text Label 8460 5510 0    60   ~ 0
+HV_RET
+Wire Wire Line
+	8460 5510 9070 5510
+Text Label 5075 3525 0    60   ~ 0
+GND
 $EndSCHEMATC

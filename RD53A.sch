@@ -321,7 +321,7 @@ NoConn ~ 10200 10600
 NoConn ~ 3450 10600
 Text Label 1900 3000 0    60   ~ 0
 DET_GRD0
-Text Label 4500 11550 1    60   ~ 0
+Text Label 4350 11550 1    60   ~ 0
 VIN
 $Comp
 L C C12
@@ -416,8 +416,6 @@ Text Label 17250 11300 1    60   ~ 0
 SLDO_IOFFSETD
 Text Label 16800 11300 1    60   ~ 0
 SLDO_VREFD
-Text Label 16950 11275 1    60   ~ 0
-SLDO_RIND
 Text Label 17100 11200 1    60   ~ 0
 VDDD_SHUNT
 Text Label 4200 11250 1    60   ~ 0
@@ -893,8 +891,6 @@ Wire Wire Line
 Wire Wire Line
 	16800 10600 16800 11500
 Wire Wire Line
-	16950 10600 16950 11300
-Wire Wire Line
 	11550 11450 11550 10600
 Wire Wire Line
 	11700 10600 11700 11450
@@ -979,8 +975,6 @@ Wire Wire Line
 Wire Wire Line
 	12300 10600 12300 11325
 Wire Wire Line
-	4500 11550 4500 10600
-Wire Wire Line
 	2600 4050 2600 4200
 Wire Wire Line
 	2600 4200 2850 4200
@@ -996,12 +990,9 @@ Wire Wire Line
 	18850 3700 19550 3700
 Wire Wire Line
 	2100 9300 2850 9300
-Wire Wire Line
-	4200 11300 4500 11300
 Connection ~ 4350 11300
 Wire Wire Line
-	4350 11300 4350 11250
-Connection ~ 4500 11300
+	4350 11250 4350 11550
 Wire Wire Line
 	4050 11500 4050 10600
 Wire Wire Line
@@ -1018,8 +1009,6 @@ Wire Wire Line
 Connection ~ 16800 12100
 Wire Wire Line
 	17100 10600 17100 11500
-Wire Wire Line
-	16950 11300 17100 11300
 Connection ~ 17100 11300
 Wire Wire Line
 	17400 11150 17400 10600
@@ -1240,4 +1229,8 @@ Wire Wire Line
 	18850 8650 19700 8650
 Wire Wire Line
 	20000 8650 20350 8650
+Wire Wire Line
+	4200 11300 4350 11300
+NoConn ~ 4500 10600
+NoConn ~ 16950 10600
 $EndSCHEMATC

@@ -437,4 +437,6 @@ Text Label 8460 5510 0    60   ~ 0
 HV_RET
 Wire Wire Line
 	8460 5510 9070 5510
+Text Label 5075 3525 0    60   ~ 0
+GND
 $EndSCHEMATC

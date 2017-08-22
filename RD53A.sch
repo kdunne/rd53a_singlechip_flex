@@ -437,17 +437,6 @@ F 3 "" H 2050 3150 50  0001 C CNN
 	1    2050 3150
 	0    1    1    0   
 $EndComp
-$Comp
-L C C10
-U 1 1 59892E97
-P 2000 4050
-F 0 "C10" H 2025 4150 50  0000 L CNN
-F 1 "C" H 2025 3950 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402_NoSilk" H 2038 3900 50  0001 C CNN
-F 3 "" H 2000 4050 50  0001 C CNN
-	1    2000 4050
-	0    1    1    0   
-$EndComp
 Text Label 9750 12350 1    60   ~ 0
 VDDD
 Text Label 19950 3550 2    60   ~ 0
@@ -1041,9 +1030,6 @@ Wire Wire Line
 	2150 4050 2850 4050
 Wire Wire Line
 	2200 3150 2850 3150
-Wire Wire Line
-	1850 4050 1350 4050
-Connection ~ 1350 4050
 Wire Wire Line
 	9750 10600 9750 12350
 Wire Wire Line

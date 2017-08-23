@@ -372,12 +372,12 @@ Connection ~ 8100 2450
 Wire Wire Line
 	7600 2450 6300 2450
 $Comp
-L Conn_rd53a_single J?
+L Conn_rd53a_single J1
 U 1 1 599CFA41
 P 2250 4750
-F 0 "J?" H 1900 7200 60  0000 C CNN
+F 0 "J1" H 1900 7200 60  0000 C CNN
 F 1 "Conn_rd53a_single" H 2000 7100 60  0000 C CNN
-F 2 "" H 2250 4250 60  0001 C CNN
+F 2 "module:conn" H 2250 4250 60  0001 C CNN
 F 3 "" H 2250 4250 60  0001 C CNN
 	1    2250 4750
 	1    0    0    -1  

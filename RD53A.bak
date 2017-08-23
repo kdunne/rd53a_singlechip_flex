@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:RD53A_single-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,7 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:rd53a
-LIBS:RD53A-cache
+LIBS:module
 LIBS:RD53A_single-cache
 EELAYER 25 0
 EELAYER END
@@ -321,7 +320,7 @@ NoConn ~ 10200 10600
 NoConn ~ 3450 10600
 Text Label 1900 3000 0    60   ~ 0
 DET_GRD0
-Text Label 4350 11550 1    60   ~ 0
+Text Label 4350 11900 1    60   ~ 0
 VIN
 $Comp
 L C C12
@@ -356,9 +355,9 @@ F 3 "" H 17250 11650 50  0001 C CNN
 	1    17250 11650
 	1    0    0    -1  
 $EndComp
-Text Label 17100 11500 1    60   ~ 0
+Text Label 17100 12000 1    60   ~ 0
 VIN
-Text Label 17400 12100 1    60   ~ 0
+Text Label 17400 12000 1    60   ~ 0
 VIN
 $Comp
 L R R10
@@ -416,10 +415,10 @@ Text Label 17250 11300 1    60   ~ 0
 SLDO_IOFFSETD
 Text Label 16800 11300 1    60   ~ 0
 SLDO_VREFD
-Text Label 17100 11200 1    60   ~ 0
-VDDD_SHUNT
+Text Label 17100 11050 1    60   ~ 0
+SHUNTD
 Text Label 4200 11250 1    60   ~ 0
-VDDA_SHUNT
+SHUNT_A
 Text Label 4650 11325 1    60   ~ 0
 SLDO_VREFA
 Text Label 2150 4050 0    60   ~ 0
@@ -541,8 +540,6 @@ F 3 "" H 2400 4800 50  0001 C CNN
 	1    2400 4800
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4200 10600 4200 11300
 Wire Wire Line
 	4350 10600 4350 10950
 Wire Wire Line
@@ -981,7 +978,7 @@ Wire Wire Line
 	2100 9300 2850 9300
 Connection ~ 4350 11300
 Wire Wire Line
-	4350 11250 4350 11550
+	4350 11250 4350 11900
 Wire Wire Line
 	4050 11500 4050 10600
 Wire Wire Line
@@ -997,12 +994,7 @@ Wire Wire Line
 	17250 12100 17250 11800
 Connection ~ 16800 12100
 Wire Wire Line
-	17100 10600 17100 11500
-Connection ~ 17100 11300
-Wire Wire Line
 	17400 11150 17400 10600
-Wire Wire Line
-	17400 11450 17400 12100
 Wire Wire Line
 	2200 9450 2850 9450
 Wire Wire Line
@@ -1215,8 +1207,14 @@ Wire Wire Line
 	18850 8650 19700 8650
 Wire Wire Line
 	20000 8650 20350 8650
-Wire Wire Line
-	4200 11300 4350 11300
 NoConn ~ 4500 10600
 NoConn ~ 16950 10600
+Wire Wire Line
+	4200 10600 4200 11300
+Wire Wire Line
+	4200 11300 4350 11300
+Wire Wire Line
+	17100 10600 17100 12000
+Wire Wire Line
+	17400 11450 17400 12000
 $EndSCHEMATC

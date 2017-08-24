@@ -30,6 +30,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:rd53a
 LIBS:module
+LIBS:RD53A_single-cache
 EELAYER 25 0
 EELAYER END
 $Descr C 22000 17000
@@ -75,7 +76,7 @@ VIN_RET
 Text Label 4800 12350 1    60   ~ 0
 GND
 Text Label 3600 11550 1    60   ~ 0
-VDDD
+VDDD1
 Text HLabel 12150 11450 3    60   Output ~ 0
 D0_0_N
 Text HLabel 12000 11450 3    60   Output ~ 0
@@ -370,7 +371,7 @@ F 3 "" H 17400 11300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 1650 4350 0    60   ~ 0
-VDDA
+VDDA1
 Text Label 2200 9450 0    60   ~ 0
 POR_OUT_B
 $Comp
@@ -387,21 +388,21 @@ $EndComp
 Text Label 18100 11325 1    60   ~ 0
 PLL_RST_B
 Text Label 6150 11425 1    60   ~ 0
-VDDA
+VDDA2
 Text Label 8100 11350 1    60   ~ 0
-VDDD
+VDDD2
 Text Label 2050 6450 0    60   ~ 0
-VDDA
+VDDA1
 Text Label 2025 8400 0    60   ~ 0
-VDDD
+VDDD1
 Text Label 13950 11400 1    60   ~ 0
-VDDA
+VDDA3
 Text Label 15900 11400 1    60   ~ 0
-VDDD
+VDDD3
 Text Label 19600 6100 2    60   ~ 0
-VDDD
+VDDD4
 Text Label 19650 8050 2    60   ~ 0
-VDDA
+VDDA4
 Text Label 4050 11400 1    60   ~ 0
 SLDO_IOFFSETA
 Text Label 10350 11450 1    60   ~ 0
@@ -437,8 +438,6 @@ F 3 "" H 2050 3150 50  0001 C CNN
 $EndComp
 Text Label 9750 12350 1    60   ~ 0
 VDDD
-Text Label 19950 3550 2    60   ~ 0
-VDDD
 $Comp
 L Jumper_NO_Small JP3
 U 1 1 59922EB1
@@ -466,7 +465,7 @@ DET_GRD1
 NoConn ~ 18850 4900
 NoConn ~ 18850 5050
 Text Label 1400 9300 0    60   ~ 0
-VDDD
+VDDD1
 Text Label 2265 9300 0    60   ~ 0
 EXT_POR_CAP
 NoConn ~ 2850 3450
@@ -948,10 +947,6 @@ Wire Wire Line
 Wire Wire Line
 	1800 3000 2850 3000
 Wire Wire Line
-	18850 3550 19950 3550
-Wire Wire Line
-	18850 3700 19550 3700
-Wire Wire Line
 	2100 9300 2850 9300
 Connection ~ 4350 11300
 Wire Wire Line
@@ -1009,9 +1004,6 @@ Connection ~ 9750 12100
 Wire Wire Line
 	10350 10600 10350 12100
 Connection ~ 10350 12100
-Wire Wire Line
-	19550 3700 19550 3550
-Connection ~ 19550 3550
 Wire Wire Line
 	18850 3100 19500 3100
 Wire Wire Line
@@ -1199,4 +1191,13 @@ Wire Wire Line
 	3550 13550 4250 13550
 Wire Wire Line
 	3550 14500 4250 14500
+Connection ~ 19550 3550
+Wire Wire Line
+	19550 3700 19550 3550
+Wire Wire Line
+	18850 3700 19550 3700
+Wire Wire Line
+	18850 3550 19950 3550
+Text Label 19950 3550 2    60   ~ 0
+VDDD4
 $EndSCHEMATC

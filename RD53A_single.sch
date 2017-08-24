@@ -30,7 +30,6 @@ LIBS:contrib
 LIBS:valves
 LIBS:rd53a
 LIBS:module
-LIBS:RD53A_single-cache
 EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -77,17 +76,6 @@ Text Label 7150 3300 2    60   ~ 0
 CMD_N
 Text Label 7150 3400 2    60   ~ 0
 CMD_P
-$Comp
-L HV U3
-U 1 1 5976CA8D
-P 9775 4725
-F 0 "U3" H 9925 4825 59  0000 C CNN
-F 1 "HV" H 9775 4825 59  0000 C CNN
-F 2 "module:HV" H 9775 4725 59  0001 C CNN
-F 3 "" H 9775 4725 59  0001 C CNN
-	1    9775 4725
-	1    0    0    -1  
-$EndComp
 Text Label 7150 3800 2    60   ~ 0
 1_P
 Text Label 7150 3900 2    60   ~ 0
@@ -102,15 +90,15 @@ Text Label 7150 4400 2    60   ~ 0
 3_N
 Text Label 700  3750 0    60   ~ 0
 0_P
-Text Label 700  3900 0    60   ~ 0
+Text Label 700  4050 0    60   ~ 0
 1_P
 Text Label 700  4200 0    60   ~ 0
 2_P
 Text Label 700  4500 0    60   ~ 0
 3_P
-Text Label 700  4050 0    60   ~ 0
+Text Label 700  3900 0    60   ~ 0
 GND
-Text Label 4000 4150 2    60   ~ 0
+Text Label 4000 4000 2    60   ~ 0
 1_N
 Text Label 4000 4300 2    60   ~ 0
 2_N
@@ -124,7 +112,7 @@ Text Label 4000 4900 2    60   ~ 0
 EXT_CMD_CLK_CONN_N
 Text Label 700  3450 0    60   ~ 0
 NTC_RET
-Text Label 4000 4600 2    60   ~ 0
+Text Label 4000 3700 2    60   ~ 0
 GND
 Text Label 700  4650 0    60   ~ 0
 CMD_CONN_P
@@ -132,7 +120,7 @@ Text Label 700  4800 0    60   ~ 0
 GND
 Text Label 4000 3550 2    60   ~ 0
 NTC
-Text Label 4000 2650 2    60   ~ 0
+Text Label 4000 2800 2    60   ~ 0
 HV_RET
 Text Label 750  2550 0    60   ~ 0
 HV
@@ -185,44 +173,11 @@ F 3 "" H 5325 3525 59  0001 C CNN
 	1    4475 3125
 	-1   0    0    -1  
 $EndComp
-$Comp
-L R R3
-U 1 1 597863BA
-P 8825 4725
-F 0 "R3" V 8905 4725 50  0000 C CNN
-F 1 "R" V 8825 4725 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 8755 4725 50  0001 C CNN
-F 3 "" H 8825 4725 50  0001 C CNN
-	1    8825 4725
-	0    1    1    0   
-$EndComp
-$Comp
-L C C5
-U 1 1 5978648B
-P 9370 5070
-F 0 "C5" H 9395 5170 50  0000 L CNN
-F 1 "C" H 9395 4970 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 9408 4920 50  0001 C CNN
-F 3 "" H 9370 5070 50  0001 C CNN
-	1    9370 5070
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R4
-U 1 1 59786570
-P 9220 5510
-F 0 "R4" V 9300 5510 50  0000 C CNN
-F 1 "R" V 9220 5510 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 9150 5510 50  0001 C CNN
-F 3 "" H 9220 5510 50  0001 C CNN
-	1    9220 5510
-	0    -1   -1   0   
-$EndComp
-Text Label 8450 4725 0    60   ~ 0
+Text Label 8450 4700 0    60   ~ 0
 HV
 Text Label 4000 3850 2    60   ~ 0
 0_N
-Text Label 4000 4000 2    60   ~ 0
+Text Label 4000 4150 2    60   ~ 0
 GND
 Text Label 9550 1850 2    60   ~ 0
 EXT_CMD_CLK_N
@@ -257,10 +212,6 @@ Wire Wire Line
 Wire Wire Line
 	10225 3550 9125 3550
 Wire Wire Line
-	8975 4725 9625 4725
-Wire Wire Line
-	8675 4725 8450 4725
-Wire Wire Line
 	4675 3075 5450 3075
 Wire Wire Line
 	4675 3525 5450 3525
@@ -274,15 +225,8 @@ Wire Wire Line
 Wire Wire Line
 	4875 3175 4875 3075
 Connection ~ 4875 3075
-Wire Wire Line
-	9370 4920 9370 4725
-Connection ~ 9370 4725
-Wire Wire Line
-	9370 5510 9370 5220
-Text Label 8460 5510 0    60   ~ 0
+Text Label 8450 5500 0    60   ~ 0
 HV_RET
-Wire Wire Line
-	8460 5510 9070 5510
 Text Label 5075 3525 0    60   ~ 0
 GND
 $Comp
@@ -397,9 +341,9 @@ Wire Wire Line
 Wire Wire Line
 	4000 4300 3000 4300
 Wire Wire Line
-	4000 4150 3000 4150
-Wire Wire Line
 	4000 4000 3000 4000
+Wire Wire Line
+	4000 4150 3000 4150
 Wire Wire Line
 	4000 3850 3000 3850
 Wire Wire Line
@@ -407,21 +351,21 @@ Wire Wire Line
 Wire Wire Line
 	3000 4750 4000 4750
 Wire Wire Line
-	3000 4600 4000 4600
+	3000 3700 4000 3700
 Wire Wire Line
 	3000 4450 4000 4450
 Wire Wire Line
 	700  3750 1700 3750
 Wire Wire Line
-	700  3900 1700 3900
-Wire Wire Line
 	700  4050 1700 4050
+Wire Wire Line
+	700  3900 1700 3900
 Wire Wire Line
 	700  4200 1700 4200
 Wire Wire Line
 	750  2550 1700 2550
 Wire Wire Line
-	4000 2650 3000 2650
+	4000 2800 3000 2800
 Wire Wire Line
 	700  3450 1700 3450
 Wire Wire Line
@@ -431,11 +375,92 @@ NoConn ~ 1700 2850
 NoConn ~ 1700 3000
 NoConn ~ 1700 3150
 NoConn ~ 1700 3300
-NoConn ~ 1700 3600
-NoConn ~ 3000 3700
 NoConn ~ 3000 3400
 NoConn ~ 3000 3250
 NoConn ~ 3000 3100
 NoConn ~ 3000 2950
-NoConn ~ 3000 2800
+$Comp
+L C C5
+U 1 1 599E17A0
+P 9400 5050
+F 0 "C5" H 9425 5150 50  0000 L CNN
+F 1 "C" H 9425 4950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 9438 4900 50  0001 C CNN
+F 3 "" H 9400 5050 50  0001 C CNN
+	1    9400 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 599E1B6D
+P 9250 5500
+F 0 "R4" V 9330 5500 50  0000 C CNN
+F 1 "R" V 9250 5500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" V 9180 5500 50  0001 C CNN
+F 3 "" H 9250 5500 50  0001 C CNN
+	1    9250 5500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8400 5500 9100 5500
+Wire Wire Line
+	9400 5500 9400 5200
+$Comp
+L R R3
+U 1 1 599E1FAC
+P 8850 4700
+F 0 "R3" V 8930 4700 50  0000 C CNN
+F 1 "R" V 8850 4700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" V 8780 4700 50  0001 C CNN
+F 3 "" H 8850 4700 50  0001 C CNN
+	1    8850 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L HV U3
+U 1 1 599E21D9
+P 9800 4700
+F 0 "U3" H 9950 4800 59  0000 C CNN
+F 1 "HV" H 9800 4800 59  0000 C CNN
+F 2 "module:HV" H 9800 4700 59  0001 C CNN
+F 3 "" H 9800 4700 59  0001 C CNN
+	1    9800 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 4700 8700 4700
+Wire Wire Line
+	9000 4700 9650 4700
+Wire Wire Line
+	9400 4900 9400 4700
+Connection ~ 9400 4700
+$Comp
+L Jumper_NO_Small JP4
+U 1 1 599E283E
+P 8300 5500
+F 0 "JP4" H 8300 5580 50  0000 C CNN
+F 1 "~" H 8310 5440 50  0000 C CNN
+F 2 "Resistors_SMD:R_0201_NoSilk" H 8300 5500 50  0001 C CNN
+F 3 "" H 8300 5500 50  0001 C CNN
+	1    8300 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 599E297D
+P 8200 5500
+F 0 "#PWR01" H 8200 5250 50  0001 C CNN
+F 1 "GND" H 8200 5350 50  0000 C CNN
+F 2 "" H 8200 5500 50  0001 C CNN
+F 3 "" H 8200 5500 50  0001 C CNN
+	1    8200 5500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3000 2650
+Text Label 700  3600 0    60   ~ 0
+GND
+Wire Wire Line
+	700  3600 1700 3600
+Text Notes 8200 5950 0    60   ~ 0
+JP1/2/3/4 solder jumpers
 $EndSCHEMATC

@@ -1,1 +1,1 @@
-# rd53a_quad_flex
+# rd53a_single chip hybrid PCB layout

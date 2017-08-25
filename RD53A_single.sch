@@ -64,6 +64,10 @@ F12 "DO_3_P" O R 6750 4300 60
 F13 "DO_3_N" O R 6750 4400 60 
 F14 "EXT_CMD_CLK_P" I R 6750 3150 60 
 F15 "EXT_CMD_CLK_N" I R 6750 3050 60 
+F16 "VDDA" O L 5450 4000 60 
+F17 "VDDD" O L 5450 4100 60 
+F18 "HITOR_N" I L 5450 4250 60 
+F19 "HITOR_P" I L 5450 4350 60 
 $EndSheet
 Text Label 7150 3550 2    60   ~ 0
 0_P
@@ -373,12 +377,6 @@ Wire Wire Line
 	4000 3550 3000 3550
 NoConn ~ 1700 2700
 NoConn ~ 1700 2850
-NoConn ~ 1700 3000
-NoConn ~ 1700 3150
-NoConn ~ 1700 3300
-NoConn ~ 3000 3400
-NoConn ~ 3000 3250
-NoConn ~ 3000 3100
 NoConn ~ 3000 2950
 $Comp
 L C C5
@@ -464,4 +462,41 @@ Wire Wire Line
 	700  3600 1700 3600
 Text Notes 8200 5950 0    60   ~ 0
 JP1/2/3/4 solder jumpers
+Text Label 4000 3400 2    60   ~ 0
+GND
+Wire Wire Line
+	3000 3400 4000 3400
+Text Label 700  3300 0    60   ~ 0
+HITOR_N
+Wire Wire Line
+	700  3300 1700 3300
+Text Label 4000 3250 2    60   ~ 0
+HITOR_P
+Wire Wire Line
+	4000 3250 3000 3250
+NoConn ~ 1700 3150
+Text Label 4000 3100 2    60   ~ 0
+VDDA
+Wire Wire Line
+	4000 3100 3000 3100
+Text Label 700  3000 0    60   ~ 0
+VDDD
+Wire Wire Line
+	700  3000 1700 3000
+Text Label 5050 4000 0    60   ~ 0
+VDDA
+Text Label 5050 4100 0    60   ~ 0
+VDDD
+Wire Wire Line
+	5450 4100 5050 4100
+Wire Wire Line
+	5450 4000 5050 4000
+Text Label 5050 4250 0    60   ~ 0
+HITOR_N
+Text Label 5050 4350 0    60   ~ 0
+HITOR_P
+Wire Wire Line
+	5450 4350 5050 4350
+Wire Wire Line
+	5450 4250 5050 4250
 $EndSCHEMATC

@@ -393,7 +393,7 @@ Text Label 8100 11350 1    60   ~ 0
 VDDD2
 Text Label 2050 6450 0    60   ~ 0
 VDDA1
-Text Label 2025 8400 0    60   ~ 0
+Text Label 2000 8400 0    60   ~ 0
 VDDD1
 Text Label 13950 11400 1    60   ~ 0
 VDDA3
@@ -462,8 +462,6 @@ F 3 "" H 1700 3000 50  0001 C CNN
 $EndComp
 Text Label 18950 3100 0    60   ~ 0
 DET_GRD1
-NoConn ~ 18850 4900
-NoConn ~ 18850 5050
 Text Label 1400 9300 0    60   ~ 0
 VDDD1
 Text Label 2265 9300 0    60   ~ 0
@@ -879,12 +877,10 @@ Wire Wire Line
 	1650 5850 1350 5850
 Connection ~ 1350 5850
 Wire Wire Line
-	2025 8400 2850 8400
-Wire Wire Line
 	1650 7800 1350 7800
 Connection ~ 1350 7800
 Wire Wire Line
-	2050 6450 2850 6450
+	1750 6450 2850 6450
 Wire Wire Line
 	2400 7650 2400 6600
 Wire Wire Line
@@ -1200,4 +1196,22 @@ Wire Wire Line
 	18850 3550 19950 3550
 Text Label 19950 3550 2    60   ~ 0
 VDDD4
+Wire Wire Line
+	19550 4900 18850 4900
+Wire Wire Line
+	18850 5050 19550 5050
+Text HLabel 1750 6450 0    60   Output ~ 0
+VDDA
+Text HLabel 1750 8400 0    60   Output ~ 0
+VDDD
+Wire Wire Line
+	1750 8400 2850 8400
+Text HLabel 19550 4900 2    60   Input ~ 0
+HITOR_N
+Text HLabel 19550 5050 2    60   Input ~ 0
+HITOR_P
+Text Label 19050 4900 0    60   ~ 0
+HITOR_N
+Text Label 19050 5050 0    60   ~ 0
+HITOR_P
 $EndSCHEMATC

@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr C 22000 17000
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -438,28 +438,6 @@ F 3 "" H 2050 3150 50  0001 C CNN
 $EndComp
 Text Label 9750 12350 1    60   ~ 0
 VDDD
-$Comp
-L Jumper_NO_Small JP3
-U 1 1 59922EB1
-P 19600 3100
-F 0 "JP3" H 19600 3180 50  0000 C CNN
-F 1 "~" H 19610 3040 50  0000 C CNN
-F 2 "Resistors_SMD:R_0201_NoSilk" H 19600 3100 50  0001 C CNN
-F 3 "" H 19600 3100 50  0001 C CNN
-	1    19600 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper_NO_Small JP2
-U 1 1 59923565
-P 1700 3000
-F 0 "JP2" H 1700 3080 50  0000 C CNN
-F 1 "~" H 1710 2940 50  0000 C CNN
-F 2 "Resistors_SMD:R_0201_NoSilk" H 1700 3000 50  0001 C CNN
-F 3 "" H 1700 3000 50  0001 C CNN
-	1    1700 3000
-	1    0    0    -1  
-$EndComp
 Text Label 18950 3100 0    60   ~ 0
 DET_GRD1
 Text Label 1400 9300 0    60   ~ 0
@@ -982,8 +960,6 @@ Wire Wire Line
 Connection ~ 2600 4050
 Connection ~ 2600 3150
 Wire Wire Line
-	1600 3000 1350 3000
-Wire Wire Line
 	1900 3150 1350 3150
 Connection ~ 1350 3150
 Wire Wire Line
@@ -1002,8 +978,6 @@ Wire Wire Line
 Connection ~ 10350 12100
 Wire Wire Line
 	18850 3100 19500 3100
-Wire Wire Line
-	19700 3100 20350 3100
 Connection ~ 20350 5200
 Wire Wire Line
 	1350 3000 1350 9150
@@ -1214,4 +1188,30 @@ Text Label 19050 4900 0    60   ~ 0
 HITOR_N
 Text Label 19050 5050 0    60   ~ 0
 HITOR_P
+$Comp
+L C C14
+U 1 1 59A0BEC5
+P 19650 3100
+F 0 "C14" H 19675 3200 50  0000 L CNN
+F 1 "C" H 19675 3000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201_NoSilk" H 19688 2950 50  0001 C CNN
+F 3 "" H 19650 3100 50  0001 C CNN
+	1    19650 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L C C10
+U 1 1 59A0C152
+P 1650 3000
+F 0 "C10" H 1675 3100 50  0000 L CNN
+F 1 "C" H 1675 2900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201_NoSilk" H 1688 2850 50  0001 C CNN
+F 3 "" H 1650 3000 50  0001 C CNN
+	1    1650 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 3000 1350 3000
+Wire Wire Line
+	19800 3100 20350 3100
 $EndSCHEMATC

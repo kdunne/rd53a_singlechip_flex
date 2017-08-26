@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -499,4 +499,10 @@ Wire Wire Line
 	5450 4350 5050 4350
 Wire Wire Line
 	5450 4250 5050 4250
+$Sheet
+S 5500 4950 1300 850 
+U 59A06DB3
+F0 "stave_connector" 60
+F1 "stave_connector.sch" 60
+$EndSheet
 $EndSCHEMATC

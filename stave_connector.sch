@@ -290,14 +290,14 @@ Text Label 8450 4400 2    60   ~ 0
 NTC
 Text Label 5600 4450 0    60   ~ 0
 NTC_RET
-Text Label 5600 5350 0    60   ~ 0
+Text Label 8400 5300 2    60   ~ 0
 HV
-Text Label 8450 5150 2    60   ~ 0
+Text Label 8450 5000 2    60   ~ 0
 HV_RET
 Wire Wire Line
-	8450 5150 7650 5150
+	8450 5000 7650 5000
 Wire Wire Line
-	5600 5350 6350 5350
+	8400 5300 7650 5300
 Wire Wire Line
 	5600 4450 6350 4450
 Wire Wire Line
@@ -330,10 +330,6 @@ NoConn ~ 6350 4300
 NoConn ~ 6350 4600
 NoConn ~ 6350 4750
 NoConn ~ 6350 4900
-NoConn ~ 6350 5050
-NoConn ~ 6350 5200
-NoConn ~ 7650 5300
-NoConn ~ 7650 5000
 NoConn ~ 7650 4850
 NoConn ~ 7650 4700
 NoConn ~ 7650 4550
@@ -341,4 +337,8 @@ NoConn ~ 7650 4250
 NoConn ~ 7650 3800
 NoConn ~ 7650 3050
 NoConn ~ 6350 2950
+NoConn ~ 6350 5050
+NoConn ~ 6350 5200
+NoConn ~ 6350 5350
+NoConn ~ 7650 5150
 $EndSCHEMATC

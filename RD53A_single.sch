@@ -125,9 +125,9 @@ Text Label 700  4800 0    60   ~ 0
 GND
 Text Label 4000 3550 2    60   ~ 0
 NTC
-Text Label 4000 2800 2    60   ~ 0
+Text Label 4000 2950 2    60   ~ 0
 HV_RET
-Text Label 750  2550 0    60   ~ 0
+Text Label 3950 2650 2    60   ~ 0
 HV
 Text Label 9550 2250 2    60   ~ 0
 CMD_P
@@ -320,17 +320,6 @@ Wire Wire Line
 Connection ~ 8100 2450
 Wire Wire Line
 	7600 2450 6300 2450
-$Comp
-L Conn_rd53a_single J1
-U 1 1 599CFA41
-P 2250 4750
-F 0 "J1" H 1900 7200 60  0000 C CNN
-F 1 "Conn_rd53a_single" H 2000 7100 60  0000 C CNN
-F 2 "module:conn" H 2250 4250 60  0001 C CNN
-F 3 "" H 2250 4250 60  0001 C CNN
-	1    2250 4750
-	1    0    0    -1  
-$EndComp
 Text Label 700  4950 0    60   ~ 0
 EXT_CMD_CLK_CONN_P
 Wire Wire Line
@@ -368,16 +357,15 @@ Wire Wire Line
 Wire Wire Line
 	700  4200 1700 4200
 Wire Wire Line
-	750  2550 1700 2550
+	3950 2650 3000 2650
 Wire Wire Line
-	4000 2800 3000 2800
+	4000 2950 3000 2950
 Wire Wire Line
 	700  3450 1700 3450
 Wire Wire Line
 	4000 3550 3000 3550
 NoConn ~ 1700 2700
 NoConn ~ 1700 2850
-NoConn ~ 3000 2950
 $Comp
 L C C5
 U 1 1 599E17A0
@@ -455,7 +443,6 @@ F 3 "" H 8200 5500 50  0001 C CNN
 	1    8200 5500
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3000 2650
 Text Label 700  3600 0    60   ~ 0
 GND
 Wire Wire Line
@@ -505,4 +492,17 @@ U 59A06DB3
 F0 "stave_connector" 60
 F1 "stave_connector.sch" 60
 $EndSheet
+$Comp
+L Conn_rd53a_single J1
+U 1 1 599CFA41
+P 2250 4750
+F 0 "J1" H 1900 7200 60  0000 C CNN
+F 1 "Conn_rd53a_single" H 2000 7100 60  0000 C CNN
+F 2 "module:conn" H 2250 4250 60  0001 C CNN
+F 3 "" H 2250 4250 60  0001 C CNN
+	1    2250 4750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1700 2550
+NoConn ~ 3000 2800
 $EndSCHEMATC

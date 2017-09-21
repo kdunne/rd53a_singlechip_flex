@@ -30,7 +30,6 @@ LIBS:contrib
 LIBS:valves
 LIBS:rd53a
 LIBS:module
-LIBS:RD53A_single-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
